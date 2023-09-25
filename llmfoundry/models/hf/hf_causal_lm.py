@@ -165,7 +165,7 @@ class ComposerHFCausalLM(HuggingFaceModelWithZLoss):
                 )
 
             signal_file_path = '.local_rank0_completed_autoresume'
-            if dist.get_local_rank() == 0:
+            if dist.get_global_rank() == 0:
                 with open(signal_file_path, 'wb') as f:
                     f.write(b'local_rank0_completed_download')
 
@@ -175,7 +175,7 @@ class ComposerHFCausalLM(HuggingFaceModelWithZLoss):
                 # Then, wait to ensure every node has finished downloading the checkpoint
                 dist.barrier()
 
-            if dist.get_local_rank() == 0:
+            if dist.get_global_rank() == 0:
                 os.remove(signal_file_path)
 
             z_loss = om_model_config.get('z_loss', 0.0)

@@ -29,6 +29,11 @@ from llmfoundry.utils.config_utils import (log_config, pop_config,
                                            update_batch_size_info)
 
 
+# enforce HF cache
+os.environ["HF_DATASETS_CACHE"] = "/leonardo_scratch/large/userexternal/gpuccett/hf_cache"
+os.environ["TRANSFORMERS_CACHE"] = "/leonardo_scratch/large/userexternal/gpuccett/hf_cache"
+os.environ["HF_DATASETS_CACHE"] = "/leonardo_scratch/large/userexternal/gpuccett/hf_cache"
+
 def validate_config(cfg: DictConfig):
     """Validates compatible model and dataloader selection."""
     loaders = [cfg.train_loader]
@@ -332,7 +337,7 @@ def main(cfg: DictConfig) -> Trainer:
         cfg,
         'save_filename',
         must_exist=False,
-        default_value='ep{epoch}-ba{batch}-rank{rank}.pt')
+        default_value='ep{epoch}-ba{batch}-rank{rank}.tar.gz')
     save_interval: Union[str, int] = pop_config(cfg,
                                                 'save_interval',
                                                 must_exist=False,

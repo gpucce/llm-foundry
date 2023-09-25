@@ -1,0 +1,10 @@
+eval_gauntlet:
+  weighting: EQUAL
+  subtract_random_baseline: true
+  rescale_accuracy: true
+  categories:
+  - name: reading_comprehension
+    benchmarks:
+    - name: squad_it
+      num_fewshot: 10
+      random_baseline: 0.0
