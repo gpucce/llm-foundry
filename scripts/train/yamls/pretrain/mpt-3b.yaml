@@ -4,7 +4,7 @@ max_seq_len: 2048
 global_seed: 17
 
 # Run Name
-run_name: # If left blank, will be read from env var $RUN_NAME
+run_name: mpt-3b # If left blank, will be read from env var $RUN_NAME
 
 # Model
 model:
@@ -31,7 +31,7 @@ train_loader:
   dataset:
     local: ${data_local}
     remote: ${data_remote}
-    split: train
+    split: train_small
     shuffle: true
     max_seq_len: ${max_seq_len}
     shuffle_seed: ${global_seed}
@@ -43,7 +43,7 @@ eval_loader:
   dataset:
     local: ${data_local}
     remote: ${data_remote}
-    split: val
+    split: val_small
     shuffle: false
     max_seq_len: ${max_seq_len}
     shuffle_seed: ${global_seed}
@@ -70,8 +70,8 @@ algorithms:
     clipping_type: norm
     clipping_threshold: 1.0
 
-max_duration: 51500ba # ~ 54B tokens
-eval_interval: 5000ba
+max_duration: 10ba # ~ 54B tokens
+eval_interval: 0
 eval_first: false
 eval_subset_num_batches: -1
 global_train_batch_size: 512
@@ -100,7 +100,8 @@ console_log_interval: 1ba
 
 callbacks:
   speed_monitor:
-    window_size: 10
+    window_size: 5
+    time_unit: seconds
   lr_monitor: {}
   memory_monitor: {}
   runtime_estimator: {}
@@ -111,7 +112,7 @@ callbacks:
 # Checkpoint to local filesystem or remote object store
 # save_interval: 5000ba
 # save_num_checkpoints_to_keep: 1  # Important, this cleans up checkpoints saved to DISK
-# save_folder: ./{run_name}/checkpoints
+save_folder: ./{run_name}/checkpoints
 # save_folder: s3://my-bucket/my-folder/{run_name}/checkpoints
 
 # Load from local filesystem or remote object store

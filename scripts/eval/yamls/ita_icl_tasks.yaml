@@ -1,0 +1,6 @@
+icl_tasks:
+-
+  label: squad_it
+  dataset_uri: ita_local_data/reading_comprehension/squad_it.jsonl
+  num_fewshot: [10]
+  icl_task_type: question_answering

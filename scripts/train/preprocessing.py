@@ -50,15 +50,15 @@ def multiple_choice(
     }
 
 
-def dolly_preprocessing_function(inp: Dict) -> Dict[str, str]:
+def camoscio_preprocessing_function(inp: Dict) -> Dict[str, str]:
     """Format the text string."""
-    PROMPT_FORMAT = 'Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{instruction}\n\n### Response:\n'
+    ITA_PROMPT_FORMAT_NO_INPUT = 'Di seguito è riportata una istruzione che descrive un task. Scrivete una risposta che completi in modo appropriato la richiesta.\n\n### Istruzione:\n{instruction}\n\n### Risposta:\n'
+    ITA_PROMPT_FORMAT = 'Di seguito è riportata una istruzione che descrive un task. Scrivete una risposta che completi in modo appropriato la richiesta.\n\n### Istruzione:\n{instruction}\n\n### Input:\n{input}\n\n### Risposta:\n'
     try:
         if inp['input'] != '':
-            instruction = inp['instruction'] + '\n' + inp['input']
+            prompt = ITA_PROMPT_FORMAT.format(instruction=inp["instruction"], input=inp['input'])
         else:
-            instruction = inp['instruction']
-        prompt = PROMPT_FORMAT.format(instruction=instruction)
+            prompt = ITA_PROMPT_FORMAT_NO_INPUT.format(instruction=inp["instruction"])
         response = inp['output']
     except Exception as e:
         raise ValueError(

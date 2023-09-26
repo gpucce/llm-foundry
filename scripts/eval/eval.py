@@ -165,7 +165,7 @@ def evaluate_model(
         fsdp_config=fsdp_config,
         load_path=load_path,
         load_weights_only=True,
-        progress_bar=False,
+        progress_bar=True,
         log_to_console=True,
         dist_timeout=dist_timeout,
         python_log_level=python_log_level,
