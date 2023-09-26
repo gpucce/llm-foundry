@@ -1,6 +1,5 @@
 # Copyright 2022 MosaicML LLM Foundry authors
 # SPDX-License-Identifier: Apache-2.0
-
 import itertools
 import os
 import json
@@ -16,11 +15,10 @@ import pandas as pd
 
 import numpy as np
 import torch
-from transformers import (AutoConfig, AutoModelForCausalLM, AutoTokenizer,
-                          pipeline)
+from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 
 
-def get_dtype(dtype):
+def get_dtype(dtype: str):
     if dtype == 'fp32':
         return torch.float32
     elif dtype == 'fp16':
@@ -33,7 +31,7 @@ def get_dtype(dtype):
             f'We only support fp32, fp16, and bf16 currently')
 
 
-def str2bool(v):
+def str2bool(v: Union[str, bool]):
     if isinstance(v, bool):
         return v
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -44,7 +42,7 @@ def str2bool(v):
         raise ArgumentTypeError('Boolean value expected.')
 
 
-def str_or_bool(v):
+def str_or_bool(v: Union[str, bool]):
     if isinstance(v, bool):
         return v
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -249,9 +247,11 @@ def main(args: Namespace) -> None:
             model.to(device)
     except Exception as e:
         raise RuntimeError(
-            'Unable to load HF model. '
-            'If you are having auth problems, try logging in via `huggingface-cli login` ' +\
-            'or by setting the environment variable `export HUGGING_FACE_HUB_TOKEN=... ' +\
+            'Unable to load HF model. ' +
+            'If you are having auth problems, try logging in via `huggingface-cli login` '
+            +
+            'or by setting the environment variable `export HUGGING_FACE_HUB_TOKEN=... '
+            +
             'using your access token from https://huggingface.co/settings/tokens.'
         ) from e
 
@@ -290,7 +290,7 @@ def main(args: Namespace) -> None:
         print(f'\nGenerate kwargs:\n{generate_kwargs}')
 
         # Generate function with correct context managers
-        def _generate(encoded_inp):
+        def _generate(encoded_inp: Dict[str, torch.Tensor]):
             with torch.no_grad():
                 with autocast_context:
                     return model.generate(
