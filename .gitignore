@@ -2,6 +2,9 @@
 my-copy-c4*/
 my-copy-arxiv*/
 *.jsonl*
+models*/
+outputs*/
+*.sif*
 
 # WandB
 wandb/

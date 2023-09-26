@@ -1,31 +1,30 @@
-# Pretrain a gpt2 style model
+# Pretrain a llama7b style model
 # this is NOT a finetuning run
 
-data_local: /p/home/jusers/puccetti1/juwels/puccetti1/llm/llm-foundry/scripts/my-copy-c4-gpt2
+data_local: /p/home/jusers/puccetti1/juwels/puccetti1/llm/llm-foundry/scripts/my-copy-c4-llama2
 data_remote: # If blank, files must be present in data_local
-tokenizer_name: gpt2
+tokenizer_name: /p/fastdata/mmlaion/puccetti1/llama-2-models-hf/llama-2-7b
 max_seq_len: 512
 global_seed: 17
 
 # Run Name
-run_name: # If left blank, will be read from env var $RUN_NAME
+run_name: llama_test # If left blank, will be read from env var $RUN_NAME
 
 # Model
 model:
   name: hf_causal_lm
-  pretrained_model_name_or_path: gpt2
+  pretrained_model_name_or_path: /p/fastdata/mmlaion/puccetti1/llama-2-models-hf/llama-2-7b
   config_overrides:
     # WARNING: if setting `pretrained: true`, `max_position_embeddings` must match the
     # `max_position_embeddings` used during pre-training
-    n_positions: ${max_seq_len}
-  pretrained: false  # false: only use the architecture; true: initialize with pretrained weights
+    max_position_embeddings: ${max_seq_len}
+  pretrained: false # false: only use the architecture; true: initialize with pretrained weights
 
 # Tokenizer
 tokenizer:
   name: ${tokenizer_name}
   kwargs:
     model_max_length: ${max_seq_len}
-    max_seq_len: ${max_seq_len}
 
 # Dataloaders
 train_loader:
@@ -74,8 +73,8 @@ algorithms:
     clipping_type: norm
     clipping_threshold: 1.0
 
-max_duration: 100ba # ~ 17.55B tokens; 150 tokens / param
-eval_interval: 10ba
+max_duration: 33696ba # ~ 17.55B tokens; 150 tokens / param
+eval_interval: 1000ba
 eval_first: false
 eval_subset_num_batches: -1
 global_train_batch_size: 256
@@ -91,7 +90,7 @@ precision: amp_bf16
 fsdp_config:
   sharding_strategy: FULL_SHARD
   mixed_precision: PURE
-  activation_checkpointing: false
+  activation_checkpointing: true
   activation_checkpointing_reentrant: false
   activation_cpu_offload: false
   limit_all_gathers: true

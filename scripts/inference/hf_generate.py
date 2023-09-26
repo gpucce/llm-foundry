@@ -3,11 +3,16 @@
 
 import itertools
 import os
+import json
+from pathlib import Path
 import random
 import time
 import warnings
 from argparse import ArgumentParser, ArgumentTypeError, Namespace
 from contextlib import nullcontext
+from tqdm import tqdm
+import pandas as pd
+
 
 import numpy as np
 import torch
@@ -58,11 +63,6 @@ def parse_args() -> Namespace:
     parser.add_argument(
         '-p',
         '--prompts',
-        nargs='+',
-        default=[
-            'My name is',
-            'This is an explanation of deep learning to a five year old. Deep learning is',
-        ],
         help='Generation prompts. Use syntax "file::/path/to/prompt.txt" to load a ' +\
              'prompt contained in a txt file.'
         )
@@ -123,6 +123,9 @@ def parse_args() -> Namespace:
     parser.add_argument('--device', type=str, default=None)
     parser.add_argument('--device_map', type=str, default=None)
     parser.add_argument('--attn_impl', type=str, default=None)
+    parser.add_argument("--headline", action="store_true", default=False)
+    parser.add_argument("--max_prompts", type=int, default=0)
+    parser.add_argument("--output_path", type=str, default="generation_output")
     return parser.parse_args()
 
 
@@ -135,8 +138,21 @@ def load_prompt_string_from_file(prompt_path_str: str):
         raise FileNotFoundError(
             f'{prompt_file_path=} does not match any existing files.')
     with open(prompt_file_path, 'r') as f:
-        prompt_string = ''.join(f.readlines())
+        # prompt_string = ''.join(f.readlines())
+        prompt_string = f.readlines()
+        prompt_string = [json.loads(i) if i.startswith("{") else i.replace("\n", "") for i in prompt_string]
     return prompt_string
+
+def load_prompts_from_csv(prompt_path_str: str):
+    # loads a csv file with the following format:
+    data = pd.read_csv(prompt_path_str)
+
+    # specific for change-it dataset
+    assert set(data.columns) == set(["headline", "full_text"])
+
+    headlines = data["headline"].tolist()
+    full_text = data["full_text"].tolist()
+    return headlines, full_text
 
 
 def maybe_synchronize():
@@ -164,11 +180,24 @@ def main(args: Namespace) -> None:
     print(f'Using {model_dtype=}')
 
     # Load prompts
-    prompt_strings = []
-    for prompt in args.prompts:
-        if prompt.startswith('file::'):
-            prompt = load_prompt_string_from_file(prompt)
-        prompt_strings.append(prompt)
+    # prompt_strings = []
+    # for prompt in args.prompts:
+    #     if prompt.startswith('file::'):
+    #         prompt = load_prompt_string_from_file(prompt)
+    #     # prompt_strings.append(prompt)
+    #     prompt_strings.extend(prompt)
+
+    prompt_strings = load_prompt_string_from_file(
+        args.prompts
+    )
+    # headlines, full_texts = load_prompts_from_csv(
+    #     # "/p/home/jusers/puccetti1/juwels/puccetti1/llm/data/CHANGE-it/train/change-it.ilgiornale.train.csv" # ilgiornale
+    #     # "/p/home/jusers/puccetti1/juwels/puccetti1/llm/data/CHANGE-it/train/change-it.repubblica.train.csv"
+    #     args.prompts
+    # )
+
+    # prompt_strings = headlines if args.headline else full_texts
+    prompt_strings = prompt_strings[:args.max_prompts] if args.max_prompts else prompt_strings
 
     # Grab config first
     print(f'Loading HF Config...')
@@ -281,89 +310,129 @@ def main(args: Namespace) -> None:
 
         else:
             batches = [prompt_strings]
+        future_df = []
 
-        for batch in batches:
-            print(f'\nTokenizing prompts...')
-            maybe_synchronize()
-            encode_start = time.time()
-            encoded_inp = tokenizer(batch, return_tensors='pt', padding=True)
-            for key, value in encoded_inp.items():
-                encoded_inp[key] = value.to(model.device)
-            maybe_synchronize()
-            encode_end = time.time()
-            input_tokens = torch.sum(
-                encoded_inp['input_ids'] != tokenizer.pad_token_id,
-                axis=1).numpy(force=True)  # type: ignore
+        future_df_path = Path(args.output_path)
+        future_df_path.mkdir(parents=True, exist_ok=True)
+        _future_df_path = f"temp_{temp}_"
+        _future_df_path += f"topp_{topp}_"
+        _future_df_path += f"topk_{topk}_"
+        _future_df_path += f"repp_{repp}_"
+        _future_df_path += f"nrnz_{nrnz}_"
+        _future_df_path += f"seed_{seed}.csv"
+        future_df_path = future_df_path / _future_df_path
+        with open(str(future_df_path).replace("csv", "json"), "w") as jsonl_out:
 
-            # Warmup
-            if args.warmup and (not done_warmup):
-                print('Warming up...')
-                _ = _generate(encoded_inp)
-                done_warmup = True
+            for batch in tqdm(batches):
+                print(f'\nTokenizing prompts...')
+                maybe_synchronize()
+                encode_start = time.time()
 
-            # Run HF generate
-            print('Generating responses...')
-            maybe_synchronize()
-            gen_start = time.time()
-            encoded_gen = _generate(encoded_inp)
-            maybe_synchronize()
-            gen_end = time.time()
+                batch_dict = None
+                if type(batch[0]) == dict:
+                    batch_dict = batch
+                    batch = [i["prompt"] for i in batch]
+                    for b in batch_dict:
+                        b["model"] = model.config._name_or_path.split("/")[-1]
 
-            decode_start = time.time()
-            decoded_gen = tokenizer.batch_decode(encoded_gen,
-                                                 skip_special_tokens=True)
-            maybe_synchronize()
-            decode_end = time.time()
-            gen_tokens = torch.sum(encoded_gen != tokenizer.pad_token_id,
-                                   axis=1).numpy(force=True)  # type: ignore
+                encoded_inp = tokenizer(
+                    batch,
+                    return_tensors='pt',
+                    padding=True,
+                    max_length=args.max_seq_len,
+                    truncation=True
+                )
 
-            # Print generations
-            delimiter = '#' * 100
-            # decode the encoded prompt to handle the case when the tokenizer
-            # trims extra spaces or does other pre-tokenization things
-            effective_prompts = tokenizer.batch_decode(encoded_inp['input_ids'],
-                                                       skip_special_tokens=True)
-            for idx, (effective_prompt, prompt, gen) in enumerate(
-                    zip(effective_prompts, batch, decoded_gen)):
-                continuation = gen[len(effective_prompt):]
+                for key, value in encoded_inp.items():
+                    encoded_inp[key] = value.to(model.device)
+                maybe_synchronize()
+                encode_end = time.time()
+                input_tokens = torch.sum(
+                    encoded_inp['input_ids'] != tokenizer.pad_token_id,
+                    axis=1).numpy(force=True)  # type: ignore
+
+                # Warmup
+                if args.warmup and (not done_warmup):
+                    print('Warming up...')
+                    print(f"prompts", encoded_inp)
+                    _ = _generate(encoded_inp)
+                    done_warmup = True
+
+                # Run HF generate
+                print('Generating responses...')
+                maybe_synchronize()
+                gen_start = time.time()
+                encoded_gen = _generate(encoded_inp)
+                maybe_synchronize()
+                gen_end = time.time()
+
+                decode_start = time.time()
+                decoded_gen = tokenizer.batch_decode(encoded_gen,
+                                                     skip_special_tokens=True)
+                maybe_synchronize()
+                decode_end = time.time()
+                gen_tokens = torch.sum(encoded_gen != tokenizer.pad_token_id,
+                                       axis=1).numpy(force=True)  # type: ignore
+
+                # Print generations
+                delimiter = '#' * 100
+                # decode the encoded prompt to handle the case when the tokenizer
+                # trims extra spaces or does other pre-tokenization things
+                effective_prompts = tokenizer.batch_decode(encoded_inp['input_ids'],
+                                                           skip_special_tokens=True)
+                for idx, (effective_prompt, prompt, gen) in enumerate(
+                        zip(effective_prompts, batch, decoded_gen)):
+                    continuation = gen[len(effective_prompt):]
+                    original_continuation = prompt[len(effective_prompt):]
+                    if batch_dict is not None:
+                        batch_dict[idx]["machine_text"] = continuation
+                        jsonl_out.write(json.dumps(batch_dict[idx]) + "\n")
+                    future_df.append({
+                        "prompt": effective_prompt,
+                        "original_continuation": original_continuation,
+                        "continuation": continuation
+                    })
+                    print(delimiter)
+                    if len(continuation) > 0:
+                        print('\033[92m' + prompt + '\033[0m' + continuation)
+                    else:
+                        print('Warning. No non-special output tokens generated.')
+                        print(
+                            'This can happen if the generation only contains padding/eos tokens.'
+                        )
+                        print('Debug:')
+                        full_generation = tokenizer.batch_decode(
+                            encoded_gen, skip_special_tokens=False)[idx]
+                        print('\033[92m' + 'Prompt:\n' + prompt + '\033[0m')
+                        print('Full generation:\n' + full_generation)
+
                 print(delimiter)
-                if len(continuation) > 0:
-                    print('\033[92m' + prompt + '\033[0m' + continuation)
-                else:
-                    print('Warning. No non-special output tokens generated.')
-                    print(
-                        'This can happen if the generation only contains padding/eos tokens.'
-                    )
-                    print('Debug:')
-                    full_generation = tokenizer.batch_decode(
-                        encoded_gen, skip_special_tokens=False)[idx]
-                    print('\033[92m' + 'Prompt:\n' + prompt + '\033[0m')
-                    print('Full generation:\n' + full_generation)
 
-            print(delimiter)
+                # Print timing info
+                bs = len(batch)
+                # ensure that gen_tokens >= 1 in case model only generated padding tokens
+                gen_tokens = np.maximum(gen_tokens, np.ones_like(gen_tokens))
+                output_tokens = gen_tokens - input_tokens
+                total_input_tokens = input_tokens.sum()
+                total_output_tokens = output_tokens.sum()
 
-            # Print timing info
-            bs = len(batch)
-            # ensure that gen_tokens >= 1 in case model only generated padding tokens
-            gen_tokens = np.maximum(gen_tokens, np.ones_like(gen_tokens))
-            output_tokens = gen_tokens - input_tokens
-            total_input_tokens = input_tokens.sum()
-            total_output_tokens = output_tokens.sum()
+                encode_latency = 1000 * (encode_end - encode_start)
+                gen_latency = 1000 * (gen_end - gen_start)
+                decode_latency = 1000 * (decode_end - decode_start)
+                total_latency = encode_latency + gen_latency + decode_latency
 
-            encode_latency = 1000 * (encode_end - encode_start)
-            gen_latency = 1000 * (gen_end - gen_start)
-            decode_latency = 1000 * (decode_end - decode_start)
-            total_latency = encode_latency + gen_latency + decode_latency
+                latency_per_output_token = total_latency / total_output_tokens
+                output_tok_per_sec = 1000 / latency_per_output_token
+                print(f'{bs=}, {input_tokens=}, {output_tokens=}')
+                print(f'{total_input_tokens=}, {total_output_tokens=}')
+                print(
+                    f'{encode_latency=:.2f}ms, {gen_latency=:.2f}ms, {decode_latency=:.2f}ms, {total_latency=:.2f}ms'
+                )
+                print(f'{latency_per_output_token=:.2f}ms/tok')
+                print(f'{output_tok_per_sec=:.2f}tok/sec')
 
-            latency_per_output_token = total_latency / total_output_tokens
-            output_tok_per_sec = 1000 / latency_per_output_token
-            print(f'{bs=}, {input_tokens=}, {output_tokens=}')
-            print(f'{total_input_tokens=}, {total_output_tokens=}')
-            print(
-                f'{encode_latency=:.2f}ms, {gen_latency=:.2f}ms, {decode_latency=:.2f}ms, {total_latency=:.2f}ms'
-            )
-            print(f'{latency_per_output_token=:.2f}ms/tok')
-            print(f'{output_tok_per_sec=:.2f}tok/sec')
+            future_df = pd.DataFrame(future_df)
+            future_df.to_csv(future_df_path)
 
 
 if __name__ == '__main__':
