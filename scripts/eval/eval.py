@@ -19,6 +19,9 @@ from omegaconf import OmegaConf as om
 from transformers import (AutoModelForCausalLM, PreTrainedTokenizerBase,
                           T5ForConditionalGeneration)
 
+from datasets import disable_caching
+disable_caching()
+
 from llmfoundry.models import MPTForCausalLM
 from llmfoundry.models.model_registry import COMPOSER_MODEL_REGISTRY
 from llmfoundry.utils.builders import (build_icl_data_and_gauntlet,
@@ -327,6 +330,8 @@ def main(cfg: DictConfig):
         print(f'Printing complete results for all models')
         assert models_df is not None
         print(models_df.to_markdown(index=False))
+        with open(model_cfg.results_output_path, "w") as out_file:
+            out_file.write(models_df.to_markdown(index=False))
 
 
 def calculate_markdown_results(logger_keys: List[str], trainer: Trainer,

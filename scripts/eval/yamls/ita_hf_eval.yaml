@@ -1,36 +1,35 @@
-max_seq_len: 1024
+max_seq_len: 512
 seed: 1
 
 # If you are using one model, put it here:
-model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/llama-13b_camoscio_hf/
+model_name_or_path: 
 # otherwise, write a block for each model you want to test in the `models` section
 
 models:
 -
-  model_name: ${model_name_or_path}
+  model_name: "camoscio2_13b"
   model:
     name: hf_causal_lm
-    pretrained_model_name_or_path: ${model_name_or_path}
+    pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
     init_device: cpu
     pretrained: true
   tokenizer:
-    name: ${model_name_or_path}
+    name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
     kwargs:
       model_max_length: ${max_seq_len}
-# # if you are evaluating more than one model, list them all as YAML blocks without variable interpolation
-# -
-#   model_name: mosaicml/mpt-7b
-#   model:
-#     name: hf_causal_lm
-#     pretrained_model_name_or_path: mosaicml/mpt-7b
-#     init_device: cpu
-#     pretrained: true
-#     config_overrides:
-#       max_seq_len: ${max_seq_len}
-#   tokenizer:
-#     name: mosaicml/mpt-7b
-#     kwargs:
-#       model_max_length: ${max_seq_len}
+  results_output_path: "results/camoscio2_13b.md"
+-
+  model_name: "camoscio1_7b"
+  model:
+    name: hf_causal_lm
+    pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio1_7b"
+    init_device: cpu
+    pretrained: true
+  tokenizer:
+    name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio1_7b"
+    kwargs:
+      model_max_length: ${max_seq_len}
+  results_output_path: "results/camoscio1_7b.md"
 
 device_eval_batch_size: 24
 precision: amp_bf16
@@ -43,9 +42,9 @@ fsdp_config:
   limit_all_gathers: true
 
 
-icl_tasks: '/leonardo_scratch/large/userexternal/gpuccett/llm-foundry/scripts/eval/yamls/ita_icl_tasks.yaml'
+icl_tasks: '/leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/yamls/ita_icl_tasks.yaml'
 # icl_subset_num_batches: 2 # -1, or omit this key entirely, to evaluate on all batches
-eval_gauntlet: '/leonardo_scratch/large/userexternal/gpuccett/llm-foundry/scripts/eval/yamls/ita_eval_gauntlet.yaml'
+eval_gauntlet: '/leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/yamls/ita_eval_gauntlet.yaml'
 
 callbacks:
   speed_monitor:

@@ -1,0 +1,1979 @@
++ module purge
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw purge
+++ /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/tcl-8.6.12-rdtv2pt4tnckxsgwtowik3sbexmxolve/bin/tclsh /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/libexec/modulecmd.tcl bash purge
+Unloading profile/base
+  ERROR: Module evaluation aborted
++ eval 'unset CPATH;
+unset CMAKE_PREFIX_PATH;
+unset CINECA_AI_LIB;
+unset __MODULES_LMTAG;
+unset OPENMPI_INC;
+unset C_INCLUDE_PATH;
+unset F77;
+unset OPENMPI_LIB;
+unset GCC_INCLUDE;
+unset CUDA_INCLUDE;
+MANPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man; export MANPATH;
+unset MPC_INC;
+unset ZLIB_HOME;
+unset MPIF77;
+unset PKG_CONFIG_PATH;
+unset OMPI_MCA_coll_hcoll_enable;
+unset __MODULES_LMPREREQ;
+unset CUDA_INC;
+unset GCC_INC;
+unset MPC_LIB;
+unset CINECA_AI_INCLUDE;
+unset F90;
+unset MPFR_INCLUDE;
+__MODULES_LMALTNAME=profile/base\&profile/default\&profile; export __MODULES_LMALTNAME;
+MODULEPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/modulefiles:/leonardo/prod/opt/modulefiles/profiles:/leonardo/prod/opt/modulefiles/base/archive:/leonardo/prod/opt/modulefiles/base/dependencies:/leonardo/prod/opt/modulefiles/base/data:/leonardo/prod/opt/modulefiles/base/environment:/leonardo/prod/opt/modulefiles/base/libraries:/leonardo/prod/opt/modulefiles/base/tools:/leonardo/prod/opt/modulefiles/base/compilers:/leonardo/prod/opt/modulefiles/base/applications; export MODULEPATH;
+unset CUDA_LIB;
+unset GCC_LIB;
+unset GMP_HOME;
+unset GMP_INC;
+PATH=/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin; export PATH;
+unset MPIF90;
+unset CUDA_HOME;
+unset GCC_HOME;
+unset MPFR_INC;
+unset CC;
+unset LD_LIBRARY_PATH;
+unset GMP_LIB;
+LOADEDMODULES=profile/base; export LOADEDMODULES;
+unset MPFR_LIB;
+unset OPENMPI_INCLUDE;
+unset CXX;
+unset ZLIB_INCLUDE;
+unset MPFR_HOME;
+unset OPENMPI_HOME;
+unset MPICXX;
+unset ZLIB_INC;
+unset MPC_INCLUDE;
+unset ZLIB_LIB;
+unset MPC_HOME;
+unset LIBRARY_PATH;
+_LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base; export _LMFILES_;
+unset MPICC;
+unset CPLUS_INCLUDE_PATH;
+unset GMP_INCLUDE;
+unset FC;
+unset __MODULES_LMCONFLICT;
+unset CINECA_AI_HOME;
+unset CINECA_AI_INC;
+test 0 = 1;'
+++ unset CPATH
+++ unset CMAKE_PREFIX_PATH
+++ unset CINECA_AI_LIB
+++ unset __MODULES_LMTAG
+++ unset OPENMPI_INC
+++ unset C_INCLUDE_PATH
+++ unset F77
+++ unset OPENMPI_LIB
+++ unset GCC_INCLUDE
+++ unset CUDA_INCLUDE
+++ MANPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man
+++ export MANPATH
+++ unset MPC_INC
+++ unset ZLIB_HOME
+++ unset MPIF77
+++ unset PKG_CONFIG_PATH
+++ unset OMPI_MCA_coll_hcoll_enable
+++ unset __MODULES_LMPREREQ
+++ unset CUDA_INC
+++ unset GCC_INC
+++ unset MPC_LIB
+++ unset CINECA_AI_INCLUDE
+++ unset F90
+++ unset MPFR_INCLUDE
+++ __MODULES_LMALTNAME='profile/base&profile/default&profile'
+++ export __MODULES_LMALTNAME
+++ MODULEPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/modulefiles:/leonardo/prod/opt/modulefiles/profiles:/leonardo/prod/opt/modulefiles/base/archive:/leonardo/prod/opt/modulefiles/base/dependencies:/leonardo/prod/opt/modulefiles/base/data:/leonardo/prod/opt/modulefiles/base/environment:/leonardo/prod/opt/modulefiles/base/libraries:/leonardo/prod/opt/modulefiles/base/tools:/leonardo/prod/opt/modulefiles/base/compilers:/leonardo/prod/opt/modulefiles/base/applications
+++ export MODULEPATH
+++ unset CUDA_LIB
+++ unset GCC_LIB
+++ unset GMP_HOME
+++ unset GMP_INC
+++ PATH=/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+++ export PATH
+++ unset MPIF90
+++ unset CUDA_HOME
+++ unset GCC_HOME
+++ unset MPFR_INC
+++ unset CC
+++ unset LD_LIBRARY_PATH
+++ unset GMP_LIB
+++ LOADEDMODULES=profile/base
+++ export LOADEDMODULES
+++ unset MPFR_LIB
+++ unset OPENMPI_INCLUDE
+++ unset CXX
+++ unset ZLIB_INCLUDE
+++ unset MPFR_HOME
+++ unset OPENMPI_HOME
+++ unset MPICXX
+++ unset ZLIB_INC
+++ unset MPC_INCLUDE
+++ unset ZLIB_LIB
+++ unset MPC_HOME
+++ unset LIBRARY_PATH
+++ _LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base
+++ export _LMFILES_
+++ unset MPICC
+++ unset CPLUS_INCLUDE_PATH
+++ unset GMP_INCLUDE
+++ unset FC
+++ unset __MODULES_LMCONFLICT
+++ unset CINECA_AI_HOME
+++ unset CINECA_AI_INC
+++ test 0 = 1
++ _mlstatus=1
++ return 1
++ module load gcc
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load gcc
+++ /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/tcl-8.6.12-rdtv2pt4tnckxsgwtowik3sbexmxolve/bin/tclsh /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/libexec/modulecmd.tcl bash load gcc
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
++ eval 'GCC_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include; export GCC_INCLUDE;
+MPC_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb; export MPC_HOME;
+LD_LIBRARY_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export LD_LIBRARY_PATH;
+CPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export CPATH;
+MANPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man; export MANPATH;
+MPC_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include; export MPC_INC;
+LIBRARY_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export LIBRARY_PATH;
+_LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0; export _LMFILES_;
+GMP_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export GMP_LIB;
+CMAKE_PREFIX_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/.; export CMAKE_PREFIX_PATH;
+LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0; export LOADEDMODULES;
+CXX=g++; export CXX;
+MPFR_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib; export MPFR_LIB;
+__MODULES_LMTAG=gmp/6.2.1\&auto-loaded:mpfr/4.1.0\&auto-loaded:mpc/1.2.1\&auto-loaded; export __MODULES_LMTAG;
+PKG_CONFIG_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib/pkgconfig; export PKG_CONFIG_PATH;
+MPFR_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc; export MPFR_HOME;
+GCC_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include; export GCC_INC;
+MPC_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib; export MPC_LIB;
+__MODULES_LMPREREQ=mpfr/4.1.0\&gmp/6.2.1:mpc/1.2.1\&gmp/6.2.1\&mpfr/4.1.0:gcc/11.3.0\&gmp/6.2.1\&mpc/1.2.1\&mpfr/4.1.0; export __MODULES_LMPREREQ;
+CPLUS_INCLUDE_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export CPLUS_INCLUDE_PATH;
+F90=gfortran; export F90;
+GMP_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export GMP_INCLUDE;
+MPFR_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include; export MPFR_INCLUDE;
+FC=gfortran; export FC;
+__MODULES_LMALTNAME=profile/base\&profile/default\&profile:gmp/6.2.1\&as\|gmp/default\&as\|gmp/latest:mpfr/4.1.0\&as\|mpfr/default\&as\|mpfr/latest:mpc/1.2.1\&as\|mpc/default\&as\|mpc/latest:gcc/11.3.0\&as\|gcc/default\&as\|gcc/latest; export __MODULES_LMALTNAME;
+__MODULES_LMCONFLICT=gmp/6.2.1\&gmp:mpfr/4.1.0\&mpfr:mpc/1.2.1\&mpc:gcc/11.3.0\&gcc; export __MODULES_LMCONFLICT;
+C_INCLUDE_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export C_INCLUDE_PATH;
+GCC_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib; export GCC_LIB;
+MPC_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include; export MPC_INCLUDE;
+F77=gfortran; export F77;
+GMP_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22; export GMP_HOME;
+GCC_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza; export GCC_HOME;
+PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/bin:/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin; export PATH;
+GMP_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export GMP_INC;
+CC=gcc; export CC;
+MPFR_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include; export MPFR_INC;
+test 0;'
+++ GCC_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include
+++ export GCC_INCLUDE
+++ MPC_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb
+++ export MPC_HOME
+++ LD_LIBRARY_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export LD_LIBRARY_PATH
+++ CPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export CPATH
+++ MANPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man
+++ export MANPATH
+++ MPC_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include
+++ export MPC_INC
+++ LIBRARY_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export LIBRARY_PATH
+++ _LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0
+++ export _LMFILES_
+++ GMP_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export GMP_LIB
+++ CMAKE_PREFIX_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/.
+++ export CMAKE_PREFIX_PATH
+++ LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0
+++ export LOADEDMODULES
+++ CXX=g++
+++ export CXX
+++ MPFR_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib
+++ export MPFR_LIB
+++ __MODULES_LMTAG='gmp/6.2.1&auto-loaded:mpfr/4.1.0&auto-loaded:mpc/1.2.1&auto-loaded'
+++ export __MODULES_LMTAG
+++ PKG_CONFIG_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ MPFR_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc
+++ export MPFR_HOME
+++ GCC_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include
+++ export GCC_INC
+++ MPC_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib
+++ export MPC_LIB
+++ __MODULES_LMPREREQ='mpfr/4.1.0&gmp/6.2.1:mpc/1.2.1&gmp/6.2.1&mpfr/4.1.0:gcc/11.3.0&gmp/6.2.1&mpc/1.2.1&mpfr/4.1.0'
+++ export __MODULES_LMPREREQ
+++ CPLUS_INCLUDE_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export CPLUS_INCLUDE_PATH
+++ F90=gfortran
+++ export F90
+++ GMP_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export GMP_INCLUDE
+++ MPFR_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include
+++ export MPFR_INCLUDE
+++ FC=gfortran
+++ export FC
+++ __MODULES_LMALTNAME='profile/base&profile/default&profile:gmp/6.2.1&as|gmp/default&as|gmp/latest:mpfr/4.1.0&as|mpfr/default&as|mpfr/latest:mpc/1.2.1&as|mpc/default&as|mpc/latest:gcc/11.3.0&as|gcc/default&as|gcc/latest'
+++ export __MODULES_LMALTNAME
+++ __MODULES_LMCONFLICT='gmp/6.2.1&gmp:mpfr/4.1.0&mpfr:mpc/1.2.1&mpc:gcc/11.3.0&gcc'
+++ export __MODULES_LMCONFLICT
+++ C_INCLUDE_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export C_INCLUDE_PATH
+++ GCC_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib
+++ export GCC_LIB
+++ MPC_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include
+++ export MPC_INCLUDE
+++ F77=gfortran
+++ export F77
+++ GMP_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22
+++ export GMP_HOME
+++ GCC_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza
+++ export GCC_HOME
+++ PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/bin:/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+++ export PATH
+++ GMP_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export GMP_INC
+++ CC=gcc
+++ export CC
+++ MPFR_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include
+++ export MPFR_INC
+++ test 0
++ _mlstatus=0
++ return 0
++ module load cuda
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load cuda
+++ /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/tcl-8.6.12-rdtv2pt4tnckxsgwtowik3sbexmxolve/bin/tclsh /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/libexec/modulecmd.tcl bash load cuda
++ eval 'LD_LIBRARY_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/compat:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export LD_LIBRARY_PATH;
+CUDA_INCLUDE=/leonardo/prod/opt/compilers/cuda/11.8/none/include; export CUDA_INCLUDE;
+CPATH=/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export CPATH;
+LIBRARY_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export LIBRARY_PATH;
+MANPATH=/leonardo/prod/opt/compilers/cuda/11.8/none/share/man:/leonardo/prod/opt/compilers/cuda/11.8/none/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man; export MANPATH;
+_LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0:/leonardo/prod/opt/modulefiles/base/compilers/cuda/11.8; export _LMFILES_;
+LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0:cuda/11.8; export LOADEDMODULES;
+CMAKE_PREFIX_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/.; export CMAKE_PREFIX_PATH;
+PKG_CONFIG_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/lib64/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib/pkgconfig; export PKG_CONFIG_PATH;
+CUDA_INC=/leonardo/prod/opt/compilers/cuda/11.8/none/include; export CUDA_INC;
+CPLUS_INCLUDE_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export CPLUS_INCLUDE_PATH;
+__MODULES_LMALTNAME=profile/base\&profile/default\&profile:gmp/6.2.1\&as\|gmp/default\&as\|gmp/latest:mpfr/4.1.0\&as\|mpfr/default\&as\|mpfr/latest:mpc/1.2.1\&as\|mpc/default\&as\|mpc/latest:gcc/11.3.0\&as\|gcc/default\&as\|gcc/latest:cuda/11.8\&as\|cuda/default\&as\|cuda/latest; export __MODULES_LMALTNAME;
+__MODULES_LMCONFLICT=gmp/6.2.1\&gmp:mpfr/4.1.0\&mpfr:mpc/1.2.1\&mpc:gcc/11.3.0\&gcc:cuda/11.8\&cuda; export __MODULES_LMCONFLICT;
+C_INCLUDE_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export C_INCLUDE_PATH;
+CUDA_LIB=/leonardo/prod/opt/compilers/cuda/11.8/none/lib64; export CUDA_LIB;
+CUDA_HOME=/leonardo/prod/opt/compilers/cuda/11.8/none; export CUDA_HOME;
+PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/samples/bin/x86_64/linux/release/:/leonardo/prod/opt/compilers/cuda/11.8/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/bin:/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin; export PATH;
+test 0;'
+++ LD_LIBRARY_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/compat:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export LD_LIBRARY_PATH
+++ CUDA_INCLUDE=/leonardo/prod/opt/compilers/cuda/11.8/none/include
+++ export CUDA_INCLUDE
+++ CPATH=/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export CPATH
+++ LIBRARY_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export LIBRARY_PATH
+++ MANPATH=/leonardo/prod/opt/compilers/cuda/11.8/none/share/man:/leonardo/prod/opt/compilers/cuda/11.8/none/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man
+++ export MANPATH
+++ _LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0:/leonardo/prod/opt/modulefiles/base/compilers/cuda/11.8
+++ export _LMFILES_
+++ LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0:cuda/11.8
+++ export LOADEDMODULES
+++ CMAKE_PREFIX_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/.
+++ export CMAKE_PREFIX_PATH
+++ PKG_CONFIG_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/lib64/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ CUDA_INC=/leonardo/prod/opt/compilers/cuda/11.8/none/include
+++ export CUDA_INC
+++ CPLUS_INCLUDE_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export CPLUS_INCLUDE_PATH
+++ __MODULES_LMALTNAME='profile/base&profile/default&profile:gmp/6.2.1&as|gmp/default&as|gmp/latest:mpfr/4.1.0&as|mpfr/default&as|mpfr/latest:mpc/1.2.1&as|mpc/default&as|mpc/latest:gcc/11.3.0&as|gcc/default&as|gcc/latest:cuda/11.8&as|cuda/default&as|cuda/latest'
+++ export __MODULES_LMALTNAME
+++ __MODULES_LMCONFLICT='gmp/6.2.1&gmp:mpfr/4.1.0&mpfr:mpc/1.2.1&mpc:gcc/11.3.0&gcc:cuda/11.8&cuda'
+++ export __MODULES_LMCONFLICT
+++ C_INCLUDE_PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export C_INCLUDE_PATH
+++ CUDA_LIB=/leonardo/prod/opt/compilers/cuda/11.8/none/lib64
+++ export CUDA_LIB
+++ CUDA_HOME=/leonardo/prod/opt/compilers/cuda/11.8/none
+++ export CUDA_HOME
+++ PATH=/leonardo/prod/opt/compilers/cuda/11.8/none/samples/bin/x86_64/linux/release/:/leonardo/prod/opt/compilers/cuda/11.8/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/bin:/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+++ export PATH
+++ test 0
++ _mlstatus=0
++ return 0
++ module load profile/deeplrn
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load profile/deeplrn
+++ /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/tcl-8.6.12-rdtv2pt4tnckxsgwtowik3sbexmxolve/bin/tclsh /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/libexec/modulecmd.tcl bash load profile/deeplrn
++ eval '_LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0:/leonardo/prod/opt/modulefiles/base/compilers/cuda/11.8:/leonardo/prod/opt/modulefiles/profiles/profile/deeplrn; export _LMFILES_;
+LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0:cuda/11.8:profile/deeplrn; export LOADEDMODULES;
+MODULEPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/modulefiles:/leonardo/prod/opt/modulefiles/profiles:/leonardo/prod/opt/modulefiles/base/archive:/leonardo/prod/opt/modulefiles/base/dependencies:/leonardo/prod/opt/modulefiles/base/data:/leonardo/prod/opt/modulefiles/base/environment:/leonardo/prod/opt/modulefiles/base/libraries:/leonardo/prod/opt/modulefiles/base/tools:/leonardo/prod/opt/modulefiles/base/compilers:/leonardo/prod/opt/modulefiles/base/applications:/leonardo/prod/opt/modulefiles/deeplrn/archive:/leonardo/prod/opt/modulefiles/deeplrn/dependencies:/leonardo/prod/opt/modulefiles/deeplrn/data:/leonardo/prod/opt/modulefiles/deeplrn/environment:/leonardo/prod/opt/modulefiles/deeplrn/libraries:/leonardo/prod/opt/modulefiles/deeplrn/tools:/leonardo/prod/opt/modulefiles/deeplrn/compilers:/leonardo/prod/opt/modulefiles/deeplrn/applications; export MODULEPATH;
+test 0;'
+++ _LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0:/leonardo/prod/opt/modulefiles/base/compilers/cuda/11.8:/leonardo/prod/opt/modulefiles/profiles/profile/deeplrn
+++ export _LMFILES_
+++ LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0:cuda/11.8:profile/deeplrn
+++ export LOADEDMODULES
+++ MODULEPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/modulefiles:/leonardo/prod/opt/modulefiles/profiles:/leonardo/prod/opt/modulefiles/base/archive:/leonardo/prod/opt/modulefiles/base/dependencies:/leonardo/prod/opt/modulefiles/base/data:/leonardo/prod/opt/modulefiles/base/environment:/leonardo/prod/opt/modulefiles/base/libraries:/leonardo/prod/opt/modulefiles/base/tools:/leonardo/prod/opt/modulefiles/base/compilers:/leonardo/prod/opt/modulefiles/base/applications:/leonardo/prod/opt/modulefiles/deeplrn/archive:/leonardo/prod/opt/modulefiles/deeplrn/dependencies:/leonardo/prod/opt/modulefiles/deeplrn/data:/leonardo/prod/opt/modulefiles/deeplrn/environment:/leonardo/prod/opt/modulefiles/deeplrn/libraries:/leonardo/prod/opt/modulefiles/deeplrn/tools:/leonardo/prod/opt/modulefiles/deeplrn/compilers:/leonardo/prod/opt/modulefiles/deeplrn/applications
+++ export MODULEPATH
+++ test 0
++ _mlstatus=0
++ return 0
++ module load cineca-ai
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load cineca-ai
+++ /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/tcl-8.6.12-rdtv2pt4tnckxsgwtowik3sbexmxolve/bin/tclsh /leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/libexec/modulecmd.tcl bash load cineca-ai
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
++ eval 'LD_LIBRARY_PATH=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/lib:/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/lib64:/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib:/leonardo/prod/opt/compilers/cuda/11.8/none/compat:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export LD_LIBRARY_PATH;
+CPATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/python-3.10.8-eauysn2mronkqqffs7r6bvftsdpsfm4b/include/python3.10:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include:/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export CPATH;
+LIBRARY_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib; export LIBRARY_PATH;
+MANPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/share/man:/leonardo/prod/opt/compilers/cuda/11.8/none/share/man:/leonardo/prod/opt/compilers/cuda/11.8/none/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man; export MANPATH;
+ZLIB_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk; export ZLIB_HOME;
+CINECA_AI_LIB=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/lib; export CINECA_AI_LIB;
+MPIF77=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpif77; export MPIF77;
+_LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0:/leonardo/prod/opt/modulefiles/base/compilers/cuda/11.8:/leonardo/prod/opt/modulefiles/profiles/profile/deeplrn:/leonardo/prod/opt/modulefiles/base/libraries/zlib/1.2.13--gcc--11.3.0:/leonardo/prod/opt/modulefiles/base/libraries/openmpi/4.1.4--gcc--11.3.0-cuda-11.8:/leonardo/prod/opt/modulefiles/deeplrn/libraries/cineca-ai/3.0.0; export _LMFILES_;
+LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0:cuda/11.8:profile/deeplrn:zlib/1.2.13--gcc--11.3.0:openmpi/4.1.4--gcc--11.3.0-cuda-11.8:cineca-ai/3.0.0; export LOADEDMODULES;
+CMAKE_PREFIX_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/.:/leonardo/prod/opt/compilers/cuda/11.8/none/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/.; export CMAKE_PREFIX_PATH;
+OPENMPI_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include; export OPENMPI_INCLUDE;
+__MODULES_LMTAG=gmp/6.2.1\&auto-loaded:mpfr/4.1.0\&auto-loaded:mpc/1.2.1\&auto-loaded:zlib/1.2.13--gcc--11.3.0\&auto-loaded:openmpi/4.1.4--gcc--11.3.0-cuda-11.8\&auto-loaded; export __MODULES_LMTAG;
+PKG_CONFIG_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib/pkgconfig:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib/pkgconfig; export PKG_CONFIG_PATH;
+MPICC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpicc; export MPICC;
+ZLIB_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include; export ZLIB_INCLUDE;
+OMPI_MCA_coll_hcoll_enable=0; export OMPI_MCA_coll_hcoll_enable;
+__MODULES_LMPREREQ=mpfr/4.1.0\&gmp/6.2.1:mpc/1.2.1\&gmp/6.2.1\&mpfr/4.1.0:gcc/11.3.0\&gmp/6.2.1\&mpc/1.2.1\&mpfr/4.1.0:openmpi/4.1.4--gcc--11.3.0-cuda-11.8\&zlib/1.2.13--gcc--11.3.0:cineca-ai/3.0.0\&cuda/11.8\&openmpi/4.1.4--gcc--11.3.0-cuda-11.8; export __MODULES_LMPREREQ;
+CPLUS_INCLUDE_PATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include:/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export CPLUS_INCLUDE_PATH;
+CINECA_AI_INCLUDE=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/include; export CINECA_AI_INCLUDE;
+OPENMPI_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn; export OPENMPI_HOME;
+MPICXX=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpic++; export MPICXX;
+OPENMPI_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include; export OPENMPI_INC;
+__MODULES_LMALTNAME=profile/base\&profile/default\&profile:gmp/6.2.1\&as\|gmp/default\&as\|gmp/latest:mpfr/4.1.0\&as\|mpfr/default\&as\|mpfr/latest:mpc/1.2.1\&as\|mpc/default\&as\|mpc/latest:gcc/11.3.0\&as\|gcc/default\&as\|gcc/latest:cuda/11.8\&as\|cuda/default\&as\|cuda/latest:zlib/1.2.13--gcc--11.3.0\&as\|zlib/default\&as\|zlib/latest:cineca-ai/3.0.0\&as\|cineca-ai/default\&as\|cineca-ai/latest; export __MODULES_LMALTNAME;
+__MODULES_LMCONFLICT=gmp/6.2.1\&gmp:mpfr/4.1.0\&mpfr:mpc/1.2.1\&mpc:gcc/11.3.0\&gcc:cuda/11.8\&cuda:zlib/1.2.13--gcc--11.3.0\&zlib:openmpi/4.1.4--gcc--11.3.0-cuda-11.8\&openmpi:cineca-ai/3.0.0\&cineca-ai; export __MODULES_LMCONFLICT;
+ZLIB_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include; export ZLIB_INC;
+C_INCLUDE_PATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include:/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include; export C_INCLUDE_PATH;
+CINECA_AI_HOME=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none; export CINECA_AI_HOME;
+CINECA_AI_INC=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/include; export CINECA_AI_INC;
+MPIF90=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpif90; export MPIF90;
+PATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/bin:/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin:/leonardo/prod/opt/compilers/cuda/11.8/none/samples/bin/x86_64/linux/release/:/leonardo/prod/opt/compilers/cuda/11.8/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/bin:/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin; export PATH;
+OPENMPI_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib; export OPENMPI_LIB;
+ZLIB_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib; export ZLIB_LIB;
+test 0;'
+++ LD_LIBRARY_PATH=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/lib:/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/lib64:/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib:/leonardo/prod/opt/compilers/cuda/11.8/none/compat:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export LD_LIBRARY_PATH
+++ CPATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/python-3.10.8-eauysn2mronkqqffs7r6bvftsdpsfm4b/include/python3.10:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include:/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export CPATH
+++ LIBRARY_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib64:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib
+++ export LIBRARY_PATH
+++ MANPATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/share/man:/leonardo/prod/opt/compilers/cuda/11.8/none/share/man:/leonardo/prod/opt/compilers/cuda/11.8/none/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/share/man:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/share/man
+++ export MANPATH
+++ ZLIB_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk
+++ export ZLIB_HOME
+++ CINECA_AI_LIB=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/lib
+++ export CINECA_AI_LIB
+++ MPIF77=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpif77
+++ export MPIF77
+++ _LMFILES_=/leonardo/prod/opt/modulefiles/profiles/profile/base:/leonardo/prod/opt/modulefiles/base/dependencies/gmp/6.2.1:/leonardo/prod/opt/modulefiles/base/dependencies/mpfr/4.1.0:/leonardo/prod/opt/modulefiles/base/dependencies/mpc/1.2.1:/leonardo/prod/opt/modulefiles/base/compilers/gcc/11.3.0:/leonardo/prod/opt/modulefiles/base/compilers/cuda/11.8:/leonardo/prod/opt/modulefiles/profiles/profile/deeplrn:/leonardo/prod/opt/modulefiles/base/libraries/zlib/1.2.13--gcc--11.3.0:/leonardo/prod/opt/modulefiles/base/libraries/openmpi/4.1.4--gcc--11.3.0-cuda-11.8:/leonardo/prod/opt/modulefiles/deeplrn/libraries/cineca-ai/3.0.0
+++ export _LMFILES_
+++ LOADEDMODULES=profile/base:gmp/6.2.1:mpfr/4.1.0:mpc/1.2.1:gcc/11.3.0:cuda/11.8:profile/deeplrn:zlib/1.2.13--gcc--11.3.0:openmpi/4.1.4--gcc--11.3.0-cuda-11.8:cineca-ai/3.0.0
+++ export LOADEDMODULES
+++ CMAKE_PREFIX_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/.:/leonardo/prod/opt/compilers/cuda/11.8/none/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/.:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/.
+++ export CMAKE_PREFIX_PATH
+++ OPENMPI_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include
+++ export OPENMPI_INCLUDE
+++ __MODULES_LMTAG='gmp/6.2.1&auto-loaded:mpfr/4.1.0&auto-loaded:mpc/1.2.1&auto-loaded:zlib/1.2.13--gcc--11.3.0&auto-loaded:openmpi/4.1.4--gcc--11.3.0-cuda-11.8&auto-loaded'
+++ export __MODULES_LMTAG
+++ PKG_CONFIG_PATH=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib/pkgconfig:/leonardo/prod/opt/compilers/cuda/11.8/none/lib64/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/lib/pkgconfig:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ MPICC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpicc
+++ export MPICC
+++ ZLIB_INCLUDE=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include
+++ export ZLIB_INCLUDE
+++ OMPI_MCA_coll_hcoll_enable=0
+++ export OMPI_MCA_coll_hcoll_enable
+++ __MODULES_LMPREREQ='mpfr/4.1.0&gmp/6.2.1:mpc/1.2.1&gmp/6.2.1&mpfr/4.1.0:gcc/11.3.0&gmp/6.2.1&mpc/1.2.1&mpfr/4.1.0:openmpi/4.1.4--gcc--11.3.0-cuda-11.8&zlib/1.2.13--gcc--11.3.0:cineca-ai/3.0.0&cuda/11.8&openmpi/4.1.4--gcc--11.3.0-cuda-11.8'
+++ export __MODULES_LMPREREQ
+++ CPLUS_INCLUDE_PATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include:/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export CPLUS_INCLUDE_PATH
+++ CINECA_AI_INCLUDE=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/include
+++ export CINECA_AI_INCLUDE
+++ OPENMPI_HOME=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn
+++ export OPENMPI_HOME
+++ MPICXX=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpic++
+++ export MPICXX
+++ OPENMPI_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include
+++ export OPENMPI_INC
+++ __MODULES_LMALTNAME='profile/base&profile/default&profile:gmp/6.2.1&as|gmp/default&as|gmp/latest:mpfr/4.1.0&as|mpfr/default&as|mpfr/latest:mpc/1.2.1&as|mpc/default&as|mpc/latest:gcc/11.3.0&as|gcc/default&as|gcc/latest:cuda/11.8&as|cuda/default&as|cuda/latest:zlib/1.2.13--gcc--11.3.0&as|zlib/default&as|zlib/latest:cineca-ai/3.0.0&as|cineca-ai/default&as|cineca-ai/latest'
+++ export __MODULES_LMALTNAME
+++ __MODULES_LMCONFLICT='gmp/6.2.1&gmp:mpfr/4.1.0&mpfr:mpc/1.2.1&mpc:gcc/11.3.0&gcc:cuda/11.8&cuda:zlib/1.2.13--gcc--11.3.0&zlib:openmpi/4.1.4--gcc--11.3.0-cuda-11.8&openmpi:cineca-ai/3.0.0&cineca-ai'
+++ export __MODULES_LMCONFLICT
+++ ZLIB_INC=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include
+++ export ZLIB_INC
+++ C_INCLUDE_PATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/include:/leonardo/prod/opt/compilers/cuda/11.8/none/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpc-1.2.1-ndktnvrbytlmmfwre4fs5qbyzzso7fxb/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/mpfr-4.1.0-w4ofd2ll4ftu53yawc4d3sssrmeo2huc/include:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gmp-6.2.1-i7u7hnaqpscmi2x4ffsz6so6fftszm22/include
+++ export C_INCLUDE_PATH
+++ CINECA_AI_HOME=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none
+++ export CINECA_AI_HOME
+++ CINECA_AI_INC=/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/include
+++ export CINECA_AI_INC
+++ MPIF90=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin/mpif90
+++ export MPIF90
+++ PATH=/leonardo/prod/spack/03/ccsdeploy/spack_deploy/envs/cineca-ai-3/view/bin:/leonardo/prod/opt/libraries/cineca-ai/3.0.0/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/bin:/leonardo/prod/opt/compilers/cuda/11.8/none/samples/bin/x86_64/linux/release/:/leonardo/prod/opt/compilers/cuda/11.8/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/gcc-11.3.0-tm6phj7wkcw7cuy6gjixemkvh5x2mhza/bin:/leonardo_work/IscrC_GELATINO/gpuccett/models/model_venv/bin:/cineca/bin:/leonardo/home/userexternal/gpuccett/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/bin/remote-cli:/cineca/bin:/leonardo/home/userexternal/gpuccett/.local/bin:/leonardo/home/userexternal/gpuccett/bin:/cineca/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+++ export PATH
+++ OPENMPI_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/openmpi-4.1.4-si334jjzldoxyl3jbbb3cf6legzshlqn/lib
+++ export OPENMPI_LIB
+++ ZLIB_LIB=/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-11.3.0/zlib-1.2.13-noknejuy3uxqyxfetsmtnvb6zna3zaxk/lib
+++ export ZLIB_LIB
+++ test 0
++ _mlstatus=0
++ return 0
++ source /leonardo_work/IscrC_GELATINO/gpuccett/llm-foundry_gpucce/venv/bin/activate
+/var/spool/slurmd/job1604974/slurm_script: line 19: /leonardo_work/IscrC_GELATINO/gpuccett/llm-foundry_gpucce/venv/bin/activate: No such file or directory
++ srun /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/fine_tuning_commands/test_salloc_llama-70b-finetune_multinode_8nodes_4gpus.sbatch
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+0: LOCAL_WORLD_SIZE=
+0: LOCAL_WORLD_SIZE=4
+0: NPROC=4
+0: WORLD SIZE=32
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+7: LOCAL_WORLD_SIZE=
+7: LOCAL_WORLD_SIZE=4
+7: NPROC=4
+7: WORLD SIZE=32
+Loading cineca-ai/3.0.0
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+    openmpi/4.1.4--gcc--11.3.0-cuda-11.8
+6: LOCAL_WORLD_SIZE=
+6: LOCAL_WORLD_SIZE=4
+6: NPROC=4
+6: WORLD SIZE=32
+5: LOCAL_WORLD_SIZE=
+4: LOCAL_WORLD_SIZE=
+5: LOCAL_WORLD_SIZE=4
+5: NPROC=4
+4: LOCAL_WORLD_SIZE=4
+5: WORLD SIZE=32
+4: NPROC=4
+4: WORLD SIZE=32
+2: LOCAL_WORLD_SIZE=
+2: LOCAL_WORLD_SIZE=4
+2: NPROC=4
+1: LOCAL_WORLD_SIZE=
+2: WORLD SIZE=32
+1: LOCAL_WORLD_SIZE=4
+1: NPROC=4
+1: WORLD SIZE=32
+3: LOCAL_WORLD_SIZE=
+3: LOCAL_WORLD_SIZE=4
+3: NPROC=4
+3: WORLD SIZE=32
+0: MASTER_ADDR=lrdn0190
+0: MASTER PORT=54321
+0: PYTHONUNBUFFERED=1
+0: BASE_RANK=0, NODEID=0
+0: LOCAL_RANK=0
+7: MASTER_ADDR=lrdn0190
+7: MASTER PORT=54321
+7: PYTHONUNBUFFERED=1
+7: BASE_RANK=28, NODEID=7
+7: LOCAL_RANK=0
+4: MASTER_ADDR=lrdn0190
+4: MASTER PORT=54321
+4: PYTHONUNBUFFERED=1
+4: BASE_RANK=16, NODEID=4
+4: LOCAL_RANK=0
+6: MASTER_ADDR=lrdn0190
+6: MASTER PORT=54321
+6: PYTHONUNBUFFERED=1
+6: BASE_RANK=24, NODEID=6
+6: LOCAL_RANK=0
+5: MASTER_ADDR=lrdn0190
+5: MASTER PORT=54321
+5: PYTHONUNBUFFERED=1
+5: BASE_RANK=20, NODEID=5
+5: LOCAL_RANK=0
+2: MASTER_ADDR=lrdn0190
+2: MASTER PORT=54321
+2: PYTHONUNBUFFERED=1
+2: BASE_RANK=8, NODEID=2
+2: LOCAL_RANK=0
+1: MASTER_ADDR=lrdn0190
+1: MASTER PORT=54321
+1: PYTHONUNBUFFERED=1
+1: BASE_RANK=4, NODEID=1
+1: LOCAL_RANK=0
+3: MASTER_ADDR=lrdn0190
+3: MASTER PORT=54321
+3: PYTHONUNBUFFERED=1
+3: BASE_RANK=12, NODEID=3
+3: LOCAL_RANK=0
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+Building train loader...
+Using pad_token, but it is not set yet.
+Building train loader...
+Building train loader...
+Building train loader...
+Using pad_token, but it is not set yet.
+Building train loader...
+Using pad_token, but it is not set yet.
+Building train loader...
+Building train loader...
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 28 crashed with exit code 1.
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 26 crashed with exit code 1.
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 22 crashed with exit code 1.
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 13 crashed with exit code 1.
+Global rank 28 (PID 176684) exited with code 1
+Global rank 29 (PID 176685) exited with code 143
+----------Begin global rank 29 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 29 STDOUT----------
+----------Begin global rank 29 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 29 STDERR----------
+Global rank 30 (PID 176686) exited with code 143
+----------Begin global rank 30 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 30 STDOUT----------
+----------Begin global rank 30 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 30 STDERR----------
+Global rank 31 (PID 176687) exited with code 143
+----------Begin global rank 31 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 31 STDOUT----------
+----------Begin global rank 31 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 31 STDERR----------
+ERROR:composer.cli.launcher:Global rank 28 (PID 176684) exited with code 1
+Global rank 24 (PID 166974) exited with code 143
+Global rank 25 (PID 166975) exited with code 143
+----------Begin global rank 25 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 25 STDOUT----------
+----------Begin global rank 25 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 25 STDERR----------
+Global rank 26 (PID 166976) exited with code 1
+----------Begin global rank 26 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 26 STDOUT----------
+----------Begin global rank 26 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 26 STDERR----------
+Global rank 27 (PID 166977) exited with code 143
+----------Begin global rank 27 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 27 STDOUT----------
+----------Begin global rank 27 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 27 STDERR----------
+ERROR:composer.cli.launcher:Global rank 24 (PID 166974) exited with code 143
+Global rank 20 (PID 158851) exited with code 143
+Global rank 21 (PID 158852) exited with code 143
+----------Begin global rank 21 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 21 STDOUT----------
+----------Begin global rank 21 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 21 STDERR----------
+Global rank 22 (PID 158853) exited with code 1
+----------Begin global rank 22 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 22 STDOUT----------
+----------Begin global rank 22 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 22 STDERR----------
+Global rank 23 (PID 158854) exited with code 143
+----------Begin global rank 23 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 23 STDOUT----------
+----------Begin global rank 23 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 23 STDERR----------
+ERROR:composer.cli.launcher:Global rank 20 (PID 158851) exited with code 143
+Global rank 12 (PID 144099) exited with code 143
+Global rank 13 (PID 144100) exited with code 1
+----------Begin global rank 13 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 13 STDOUT----------
+----------Begin global rank 13 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 13 STDERR----------
+Global rank 14 (PID 144101) exited with code 143
+----------Begin global rank 14 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 14 STDOUT----------
+----------Begin global rank 14 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 14 STDERR----------
+Global rank 15 (PID 144102) exited with code 143
+----------Begin global rank 15 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 15 STDOUT----------
+----------Begin global rank 15 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 15 STDERR----------
+ERROR:composer.cli.launcher:Global rank 12 (PID 144099) exited with code 143
+srun: error: lrdn0240: task 3: Exited with exit code 143
+srun: error: lrdn0278: task 6: Exited with exit code 143
+srun: error: lrdn0297: task 7: Exited with exit code 1
+srun: error: lrdn0265: task 5: Exited with exit code 143
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 18 crashed with exit code 1.
+Global rank 16 (PID 177202) exited with code 143
+Global rank 17 (PID 177203) exited with code 143
+----------Begin global rank 17 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 17 STDOUT----------
+----------Begin global rank 17 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 17 STDERR----------
+Global rank 18 (PID 177204) exited with code 1
+----------Begin global rank 18 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 18 STDOUT----------
+----------Begin global rank 18 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 18 STDERR----------
+Global rank 19 (PID 177205) exited with code 143
+----------Begin global rank 19 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 19 STDOUT----------
+----------Begin global rank 19 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 19 STDERR----------
+ERROR:composer.cli.launcher:Global rank 16 (PID 177202) exited with code 143
+srun: error: lrdn0248: task 4: Exited with exit code 143
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 1 crashed with exit code 1.
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 11 crashed with exit code 1.
+Global rank 0 (PID 194799) exited with code 143
+Global rank 1 (PID 194800) exited with code 1
+----------Begin global rank 1 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 1 STDOUT----------
+----------Begin global rank 1 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 1 STDERR----------
+Global rank 2 (PID 194801) exited with code 143
+----------Begin global rank 2 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 2 STDOUT----------
+----------Begin global rank 2 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 2 STDERR----------
+Global rank 3 (PID 194802) exited with code 143
+----------Begin global rank 3 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 3 STDOUT----------
+----------Begin global rank 3 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 3 STDERR----------
+ERROR:composer.cli.launcher:Global rank 0 (PID 194799) exited with code 143
+Global rank 8 (PID 172900) exited with code 143
+Global rank 9 (PID 172901) exited with code 143
+----------Begin global rank 9 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 9 STDOUT----------
+----------Begin global rank 9 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 9 STDERR----------
+Global rank 10 (PID 172902) exited with code 143
+----------Begin global rank 10 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 10 STDOUT----------
+----------Begin global rank 10 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 10 STDERR----------
+Global rank 11 (PID 172903) exited with code 1
+----------Begin global rank 11 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 11 STDOUT----------
+----------Begin global rank 11 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+ERROR:composer.cli.launcher:Global rank 8 (PID 172900) exited with code 143
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 11 STDERR----------
+srun: error: lrdn0235: task 2: Exited with exit code 143
+srun: error: lrdn0190: task 0: Exited with exit code 143
+Waiting up to 30 seconds for all training processes to terminate. Press Ctrl-C to exit immediately.
+ERROR:composer.cli.launcher:Rank 6 crashed with exit code 1.
+Global rank 4 (PID 184933) exited with code 143
+Global rank 5 (PID 184934) exited with code 143
+----------Begin global rank 5 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 5 STDOUT----------
+----------Begin global rank 5 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 5 STDERR----------
+Global rank 6 (PID 184935) exited with code 1
+----------Begin global rank 6 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 6 STDOUT----------
+----------Begin global rank 6 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:588 in <module>                                                   │
+│                                                                              │
+│   585 │   cfg = om.merge(yaml_cfg, cli_cfg)                                  │
+│   586 │   om.resolve(cfg)                                                    │
+│   587 │   assert isinstance(cfg, DictConfig)                                 │
+│ ❱ 588 │   main(cfg)                                                          │
+│   589                                                                        │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:466 in main                                                       │
+│                                                                              │
+│   463 │                                                                      │
+│   464 │   # Dataloaders                                                      │
+│   465 │   print('Building train loader...')                                  │
+│ ❱ 466 │   train_loader = build_dataloader(                                   │
+│   467 │   │   train_loader_config,                                           │
+│   468 │   │   tokenizer,                                                     │
+│   469 │   │   device_train_batch_size,                                       │
+│                                                                              │
+│ /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/trai │
+│ n/train.py:176 in build_dataloader                                           │
+│                                                                              │
+│   173 │   │   │   device_batch_size,                                         │
+│   174 │   │   )                                                              │
+│   175 │   elif cfg.name == 'finetuning':                                     │
+│ ❱ 176 │   │   return build_finetuning_dataloader(                            │
+│   177 │   │   │   cfg,                                                       │
+│   178 │   │   │   tokenizer,                                                 │
+│   179 │   │   │   device_batch_size,                                         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/dataloader.py:168 in build_finetuning_dataloader                    │
+│                                                                              │
+│   165 │   │   │   │   )                                                      │
+│   166 │   │   │   dataset = _build_hf_dataset_from_remote(cfg, tokenizer)    │
+│   167 │   │   else:                                                          │
+│ ❱ 168 │   │   │   dataset = dataset_constructor.build_from_hf(               │
+│   169 │   │   │   │   cfg.dataset,                                           │
+│   170 │   │   │   │   max_seq_len=cfg.dataset.max_seq_len,                   │
+│   171 │   │   │   │   tokenizer=tokenizer,                                   │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/llmfoundry/data/fi │
+│ netuning/tasks.py:333 in build_from_hf                                       │
+│                                                                              │
+│   330 │   │   │   preprocessing_fn = self.get_preprocessing_fn_from_str(     │
+│   331 │   │   │   │   proto_preprocessing_fn, dataset_name)                  │
+│   332 │   │                                                                  │
+│ ❱ 333 │   │   dataset = hf_datasets.load_dataset(dataset_name, split=split,  │
+│   334 │   │                                                                  │
+│   335 │   │   def dataset_mapper(example: Dict):                             │
+│   336 │   │   │   if preprocessing_fn is not None:                           │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:2129 in load_dataset                        │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1815 in load_dataset_builder                │
+│                                                                              │
+│   1812 │   if storage_options is not None:                                   │
+│   1813 │   │   download_config = download_config.copy() if download_config e │
+│   1814 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1815 │   dataset_module = dataset_module_factory(                          │
+│   1816 │   │   path,                                                         │
+│   1817 │   │   revision=revision,                                            │
+│   1818 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:1430 in dataset_module_factory              │
+│                                                                              │
+│   1427 │   │   │   data_files=data_files,                                    │
+│   1428 │   │   │   download_config=download_config,                          │
+│   1429 │   │   │   download_mode=download_mode,                              │
+│ ❱ 1430 │   │   ).get_module()                                                │
+│   1431 │   # Try locally                                                     │
+│   1432 │   elif path.endswith(filename):                                     │
+│   1433 │   │   if os.path.isfile(path):                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/load.py:958 in get_module                           │
+│                                                                              │
+│    955 │   def get_module(self) -> DatasetModule:                            │
+│    956 │   │   base_path = Path(self.data_dir or "").expanduser().resolve(). │
+│    957 │   │   patterns = sanitize_patterns(self.data_files) if self.data_fi │
+│ ❱  958 │   │   data_files = DataFilesDict.from_patterns(                     │
+│    959 │   │   │   patterns,                                                 │
+│    960 │   │   │   download_config=self.download_config,                     │
+│    961 │   │   │   base_path=base_path,                                      │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:674 in from_patterns                  │
+│                                                                              │
+│   671 │   │   out = cls()                                                    │
+│   672 │   │   for key, patterns_for_key in patterns.items():                 │
+│   673 │   │   │   out[key] = (                                               │
+│ ❱ 674 │   │   │   │   DataFilesList.from_patterns(                           │
+│   675 │   │   │   │   │   patterns_for_key,                                  │
+│   676 │   │   │   │   │   base_path=base_path,                               │
+│   677 │   │   │   │   │   allowed_extensions=allowed_extensions,             │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:579 in from_patterns                  │
+│                                                                              │
+│   576 │   │   for pattern in patterns:                                       │
+│   577 │   │   │   try:                                                       │
+│   578 │   │   │   │   data_files.extend(                                     │
+│ ❱ 579 │   │   │   │   │   resolve_pattern(                                   │
+│   580 │   │   │   │   │   │   pattern,                                       │
+│   581 │   │   │   │   │   │   base_path=base_path,                           │
+│   582 │   │   │   │   │   │   allowed_extensions=allowed_extensions,         │
+│                                                                              │
+│ /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/lib/python3.1 │
+│ 0/site-packages/datasets/data_files.py:368 in resolve_pattern                │
+│                                                                              │
+│   365 │   │   error_msg = f"Unable to find '{pattern}'"                      │
+│   366 │   │   if allowed_extensions is not None:                             │
+│   367 │   │   │   error_msg += f" with any supported extension {list(allowed │
+│ ❱ 368 │   │   raise FileNotFoundError(error_msg)                             │
+│   369 │   return out                                                         │
+│   370                                                                        │
+│   371                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: Unable to find 
+'/leonardo_work/IscrC_GELATINO/gpuccett/data/camoscio_data/camoscio_data.json'
+
+----------End global rank 6 STDERR----------
+Global rank 7 (PID 184936) exited with code 143
+----------Begin global rank 7 STDOUT----------
+As run_name, save_folder, and save_latest_filename are set,                 changing autoresume default to True...
+Building train loader...
+
+----------End global rank 7 STDOUT----------
+----------Begin global rank 7 STDERR----------
+device_microbatch_size > device_batch_size, will be reduced from 8 -> 4.
+Using pad_token, but it is not set yet.
+
+----------End global rank 7 STDERR----------
+ERROR:composer.cli.launcher:Global rank 4 (PID 184933) exited with code 143
+srun: error: lrdn0193: task 1: Exited with exit code 143

@@ -15,9 +15,10 @@ models:
     init_device: cpu
     pretrained: true
   tokenizer:
-    name: ${model_name_or_path}
+    name: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/hf_cache/tokenizers--EleutherAI--gpt-neo-125m
     kwargs:
       model_max_length: ${max_seq_len}
+
 # # if you are evaluating more than one model, list them all as YAML blocks without variable interpolation
 # -
 #   model_name: mosaicml/mpt-7b
@@ -33,7 +34,6 @@ models:
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 
-
 device_eval_batch_size: 4
 
 # FSDP config for model sharding
@@ -43,5 +43,5 @@ device_eval_batch_size: 4
 #   forward_prefetch: True
 #   limit_all_gathers: True
 
-icl_tasks: 'eval/yamls/tasks.yaml'
+icl_tasks: 'eval/yamls/tasks_light.yaml'
 eval_gauntlet: 'eval/yamls/eval_gauntlet.yaml'

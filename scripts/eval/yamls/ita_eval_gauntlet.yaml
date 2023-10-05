@@ -3,8 +3,11 @@ eval_gauntlet:
   subtract_random_baseline: true
   rescale_accuracy: true
   categories:
-  - name: reading_comprehension
+  - name: language_understanding
     benchmarks:
-    - name: squad_it
-      num_fewshot: 10
+    - name: squad_it_valid
+      num_fewshot: 0
       random_baseline: 0.0
+    # - name: squad_it_test
+    #   num_fewshot: 0
+    #   random_baseline: 0.0
