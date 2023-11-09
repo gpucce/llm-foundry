@@ -4,11 +4,11 @@
 #SBATCH --partition boost_usr_prod
 #SBATCH --time 01:00:00
 #SBATCH --gres gpu:4
-#SBATCH --nodes 8
+#SBATCH --nodes 2
 #SBATCH --ntasks-per-node 1
 #SBATCH --cpus-per-task 32
 #SBATCH --wait-all-nodes 1
-#SBATCH --output ./slurm_logs/llama-70b_8nodes_4gpus_%j.out
+#SBATCH --output ./slurm_logs/llama-70b_2nodes_4gpus_deepspeed_%j.out
 
 module purge
 module load gcc
@@ -18,4 +18,4 @@ module load cineca-ai
 
 source /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/venv/bin/activate
 
-srun /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/fine_tuning_commands/test_salloc_llama-70b-finetune_multinode_8nodes_4gpus.sbatch
+srun /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/fine_tuning_commands/test_salloc_llama-70b-finetune_multinode_2nodes_4gpus_deepspeed.sbatch
