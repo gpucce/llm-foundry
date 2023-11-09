@@ -7,5 +7,5 @@ icl_tasks:
 -
   label: squad_it_test
   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_qa_test.jsonl
-  num_fewshot: [0, 10]
+  num_fewshot: [0, 3]
   icl_task_type: language_modeling
