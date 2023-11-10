@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
-module purge
-module load gcc
-module load cuda
-module load profile/deeplrn
-module load cineca-ai
+# module purge
+# module load gcc
+# module load cuda
+# module load profile/deeplrn
+# module load cineca-ai
 
 source /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/bin/activate
 
@@ -48,7 +48,7 @@ then
     sleep 1
 fi
 
-composer train.py yamls/finetune/llama-13b_camoscio.yaml
+composer train.py yamls/finetune/llama-13b_camoscio_2nodes.yaml
 
 # echo $(echo $SLURM_NODEID)
 # echo $SLURM_NODEID

@@ -2,12 +2,12 @@ max_seq_len: 2048
 global_seed: 17
 
 # Run Name
-run_name: None # If left blank, will be read from env var $RUN_NAME
+run_name: llama2-13b-chat_camoscio # If left blank, will be read from env var $RUN_NAME
 
 model:
   name: hf_causal_lm
   pretrained: true
-  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/llama_2_hf/llama-2-13b-chat
+  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat
   init_device: mixed
   # config_overrides:
     # max_position_embeddings: ${max_seq_len}
@@ -18,7 +18,7 @@ model:
 
 # Tokenizer
 tokenizer:
-  name: /leonardo_scratch/large/userexternal/gpuccett/models/llama_2_hf/llama-2-13b-chat
+  name: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat
   kwargs:
     model_max_length: ${max_seq_len}
 
@@ -52,11 +52,11 @@ train_loader:
 #   dataset:
 #     hf_name: json
 #     hf_kwargs:
-#       data_files: /leonardo_scratch/large/userexternal/gpuccett/data/squad_it_data/test.json
+#       data_files: 
+#     split: test
 #     max_seq_len: ${max_seq_len}
 #     allow_pad_trimming: false
 #     decoder_only_format: true
-#     preprocessing_fn: preprocessing:camoscio_preprocessing_function
 #     # packing_ratio:
 #     shuffle: false
 #   drop_last: true
@@ -87,16 +87,16 @@ algorithms:
     clipping_type: norm
     clipping_threshold: 1.0
 
-max_duration: 60ba  # 2-3 epochs seems like the sweet spot
+max_duration: 3ep  # 2-3 epochs seems like the sweet spot
 eval_interval: 1
 # eval_subset_num_batches: -1
 # eval_first: true
-global_train_batch_size: 64  # somewhere in the 6-8 * numgpus range seems good
+global_train_batch_size: 128  # somewhere in the 6-8 * numgpus range seems good
 
 # System
 seed: ${global_seed}
-device_eval_batch_size: 2
-device_train_microbatch_size: 2
+device_eval_batch_size: 4
+device_train_microbatch_size: 4
 # device_train_microbatch_size: auto
 precision: amp_bf16
 
@@ -109,16 +109,20 @@ fsdp_config:
   activation_cpu_offload: false
   limit_all_gathers: true
   verbose: true
-  # state_dict_type: sharded
+  sync_module_states: true
+  state_dict_type: sharded
 
 # Logging
 progress_bar: false
 log_to_console: true
-console_log_interval: 5ba
+console_log_interval: 20ba
 
 callbacks:
   speed_monitor:
     window_size: 10
+  mono_ckpt_saver:
+    save_folder: /leonardo_scratch/large/userexternal/gpuccett/models/{run_name}/checkpoints
+    batch_interval: 392
   lr_monitor: {}
   memory_monitor: {}
   runtime_estimator: {}
@@ -126,11 +130,11 @@ callbacks:
 loggers:
   wandb:
     project: llm_ita
-    name: camoscio-13b_tests_2nodes
+    name: camoscio_13b-chat_8nodes
     entity: gpucce
 
 # Checkpoint to local filesystem or remote object store
-save_interval: 10ba
-save_num_checkpoints_to_keep: 1  # Important, this cleans up checkpoints saved to DISK
+save_interval: 1ep
+# save_num_checkpoints_to_keep: 1  # Important, this cleans up checkpoints saved to DISK
 save_folder: /leonardo_scratch/large/userexternal/gpuccett/models/{run_name}/checkpoints
 # save_folder: s3://my-bucket/my-folder/{run_name}/checkpoints

@@ -6,30 +6,54 @@ model_name_or_path:
 # otherwise, write a block for each model you want to test in the `models` section
 
 models:
+# -
+#   model_name: "camoscio1_7b"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio1_7b"
+#     init_device: cpu
+#     pretrained: true
+#   tokenizer:
+#     name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio1_7b"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   results_output_path: "results/camoscio1_7b.md"
+# -
+#   model_name: "camoscio2_13b-chat"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b-chat"
+#     init_device: cpu
+#     pretrained: true
+#   tokenizer:
+#     name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b-chat"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   results_output_path: "results/camoscio2_13b-chat.md"
+# -
+#   model_name: "camoscio2_13b"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
+#     init_device: cpu
+#     pretrained: true
+#   tokenizer:
+#     name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   results_output_path: "results/camoscio2_13b.md"
 -
-  model_name: "camoscio1_7b"
+  model_name: "llama2_13b_chat"
   model:
     name: hf_causal_lm
-    pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio1_7b"
+    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
     init_device: cpu
     pretrained: true
   tokenizer:
-    name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio1_7b"
+    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
     kwargs:
       model_max_length: ${max_seq_len}
-  results_output_path: "results/camoscio1_7b.md"
--
-  model_name: "camoscio2_13b"
-  model:
-    name: hf_causal_lm
-    pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
-    init_device: cpu
-    pretrained: true
-  tokenizer:
-    name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
-    kwargs:
-      model_max_length: ${max_seq_len}
-  results_output_path: "results/camoscio2_13b.md"
+  results_output_path: "results/llama2_13b_chat.md"
 
 device_eval_batch_size: 24
 precision: amp_bf16

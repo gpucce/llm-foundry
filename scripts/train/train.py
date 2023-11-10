@@ -245,7 +245,7 @@ def main(cfg: DictConfig) -> Trainer:
     deepspeed_config: Optional[Dict[str, Any]] = pop_config(cfg,
                                                        'deepspeed_config',
                                                        must_exist=False,
-                                                       default_value={},
+                                                       default_value=None,
                                                        convert=True)
     lora_config: Optional[Dict[str, Any]] = pop_config(cfg,
                                                        'lora',

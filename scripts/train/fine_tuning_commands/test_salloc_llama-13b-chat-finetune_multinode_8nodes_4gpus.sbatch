@@ -1,21 +1,27 @@
-#!/usr/bin/bash
+#!/bin/bash
 
+# module purge
+# module load gcc
+# module load cuda
+# module load profile/deeplrn
+# module load cineca-ai
+
+source /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/foundry_venv/bin/activate
+
+export PYTHONPATH=""
 
 printf -v exp_date '%(%Y-%m-%d_%H-%M-%S)T' -1
-export RUN_NAME="llama-13b_camoscio_1node_${exp_date}"
-echo "${SLURM_NODEID}: LOCAL_WORLD_SIZE=${LOCAL_WORLD_SIZE}"
-
-export STDERR="slurm_logs/llama-13b_2nodes_4gpus_${exp_date}.err"
+export RUN_NAME="llama-13b-chat_camoscio_${exp_date}"
+# export RUN_NAME=llama-13b_camoscio_2023-09-22_19
 
 export TF_ENABLE_ONEDNN_OPTS=0
 export WANDB_MODE=offline
-echo "${SLURM_NODEID}: WANDB_MODE: ${WANDB_MODE}"
 
 export LOCAL_WORLD_SIZE=4
 echo "${SLURM_NODEID}: LOCAL_WORLD_SIZE=${LOCAL_WORLD_SIZE}"
 export NPROC=$LOCAL_WORLD_SIZE
 echo "${SLURM_NODEID}: NPROC=${NPROC}"
-export WORLD_SIZE=8
+export WORLD_SIZE=32
 echo "${SLURM_NODEID}: WORLD SIZE=${WORLD_SIZE}"
 
 master_addr="$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)"
@@ -33,7 +39,6 @@ echo "${SLURM_NODEID}: BASE_RANK=${BASE_RANK}, NODEID=${SLURM_NODEID}"
 export LOCAL_RANK=$SLURM_LOCALID
 echo "${SLURM_NODEID}: LOCAL_RANK=${LOCAL_RANK}"
 
-# export CUDA_VISIBLE_DEVICES="0,1"
 # echo "CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES}"
 
 
@@ -43,4 +48,4 @@ then
     sleep 1
 fi
 
-composer train.py yamls/finetune/llama-13b_camoscio_2nodes.yaml
+composer train.py yamls/finetune/llama-13b-chat_camoscio_8nodes.yaml

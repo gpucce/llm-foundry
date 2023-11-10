@@ -4,8 +4,53 @@ icl_tasks:
 #   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_qa_valid.jsonl
 #   num_fewshot: [0, 10]
 #   icl_task_type: language_modeling
--
-  label: squad_it_test
-  dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_qa_test.jsonl
+# -
+#   label: squad_it_test
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_qa_test.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+- 
+  label: newssumm_test
+  dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_ns_test_fanpage.jsonl
   num_fewshot: [0, 3]
   icl_task_type: language_modeling
+# - 
+#   label: xformal_f2i
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_formal_test_0.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_f2i
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_formal_test_1.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_f2i
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_formal_test_2.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_f2i
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_formal_test_3.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_i2f
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_informal_test_0.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_i2f
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_informal_test_1.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_i2f
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_informal_test_2.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
+# - 
+#   label: xformal_i2f
+#   dataset_uri: /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/ita_local_data/language_understanding/it5/datasets_fst_informal_test_3.jsonl
+#   num_fewshot: [0, 3]
+#   icl_task_type: language_modeling
