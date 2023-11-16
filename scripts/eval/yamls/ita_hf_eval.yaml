@@ -18,6 +18,18 @@ models:
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 #   results_output_path: "results/camoscio1_7b.md"
+-
+  model_name: "camoscio1_mistral-7b"
+  model:
+    name: hf_causal_lm
+    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio-mistral7b"
+    init_device: cpu
+    pretrained: true
+  tokenizer:
+    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio-mistral7b"
+    kwargs:
+      model_max_length: ${max_seq_len}
+  results_output_path: "results/camoscio1_7b.md"
 # -
 #   model_name: "camoscio2_13b-chat"
 #   model:
@@ -42,32 +54,61 @@ models:
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 #   results_output_path: "results/camoscio2_13b.md"
--
-  model_name: "llama2_13b_chat"
-  model:
-    name: hf_causal_lm
-    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
-    init_device: cpu
-    pretrained: true
-  tokenizer:
-    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
-    kwargs:
-      model_max_length: ${max_seq_len}
-  results_output_path: "results/llama2_13b_chat.md"
+# -
+#   model_name: "camoscio2_70b"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora/merged-350"
+#     init_device: cpu
+#     pretrained: true
+#     use_pure_hf: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora/merged-350"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   move_to_device: false
+#   results_output_path: "results/camoscio2_70b.md"
 
-device_eval_batch_size: 24
+# -
+#   model_name: "llama2_70b-chat"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-70b-chat-hf"
+#     init_device: cpu
+#     pretrained: true
+#     use_pure_hf: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-70b-chat-hf"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   move_to_device: false
+#   results_output_path: "results/camoscio2_70b.md"
+# -
+#   model_name: "llama2_13b_chat"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
+#     init_device: cpu
+#     pretrained: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   results_output_path: "results/llama2_13b_chat.md"
+
+device_eval_batch_size: 12
 precision: amp_bf16
 
 # FSDP config for model sharding
-fsdp_config:
-  sharding_strategy: FULL_SHARD
-  mixed_precision: PURE
-  forward_prefetch: true
-  limit_all_gathers: true
+# fsdp_config:
+#   sharding_strategy: FULL_SHARD
+#   mixed_precision: PURE
+#   forward_prefetch: true
+#   limit_all_gathers: true
 
 
 icl_tasks: '/leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/yamls/ita_icl_tasks.yaml'
-# icl_subset_num_batches: 2 # -1, or omit this key entirely, to evaluate on all batches
+# icl_subset_num_batches: 10 # -1, or omit this key entirely, to evaluate on all batches
 eval_gauntlet: '/leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/eval/yamls/ita_eval_gauntlet.yaml'
 
 callbacks:

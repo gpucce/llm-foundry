@@ -2,12 +2,12 @@ max_seq_len: 2048
 global_seed: 17
 
 # Run Name
-run_name: llama2-13b-chat_camoscio_1.4lr # If left blank, will be read from env var $RUN_NAME
+run_name: camoscio-mistral7b_8nodes # If left blank, will be read from env var $RUN_NAME
 
 model:
   name: hf_causal_lm
   pretrained: true
-  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat
+  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral0.1-7b/
   init_device: mixed
   # config_overrides:
     # max_position_embeddings: ${max_seq_len}
@@ -18,7 +18,7 @@ model:
 
 # Tokenizer
 tokenizer:
-  name: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat
+  name: /leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral0.1-7b/
   kwargs:
     model_max_length: ${max_seq_len}
 
@@ -75,7 +75,7 @@ scheduler:
 optimizer:
   # Based on Dolly
   name: decoupled_adamw
-  lr: 1.0e-4
+  lr: 1.0e-5
   betas:
   - 0.9
   - 0.999
@@ -130,7 +130,7 @@ callbacks:
 loggers:
   wandb:
     project: llm_ita
-    name: camoscio_13b-chat_8nodes
+    name: mistral-7b0.1
     entity: gpucce
 
 # Checkpoint to local filesystem or remote object store

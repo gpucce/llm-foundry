@@ -8,7 +8,7 @@
 #SBATCH --ntasks-per-node 1
 #SBATCH --cpus-per-task 32
 #SBATCH --wait-all-nodes 1
-#SBATCH --output ./slurm_logs/llama-13b-chat_8nodes_4gpus_%j.out
+#SBATCH --output ./slurm_logs/mistral-7b_8nodes_4gpus_%j.out
 
 module purge
 module load gcc
@@ -20,4 +20,4 @@ export PYTHONPATH=""
 
 source /leonardo_work/IscrC_GELATINO/gpuccett/Repos/foundry_venv/bin/activate
 
-srun /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/fine_tuning_commands/test_salloc_llama-13b-chat-finetune_multinode_8nodes_4gpus.sbatch
+srun /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/fine_tuning_commands/test_salloc_mistral-7b-finetune_multinode_8nodes_4gpus.sbatch

@@ -8,3 +8,5 @@
 |            | squad_it_test |           |   0.305165 | 3-shot            | camoscio2_13b-chat |
 |            | squad_it_test |           |   0.197266 | 0-shot            | llama2_13b_chat    |
 |            | squad_it_test |           |   0.409384 | 3-shot            | llama2_13b_chat    |
+|            | squad_it_test |           |   0.212511 | 0-shot            | llama2_70b-chat    |
+|            | squad_it_test |           |   0.425286 | 3-shot            | llama2_70b-chat    |

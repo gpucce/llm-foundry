@@ -71,6 +71,39 @@ def load_peft_model(model_cfg: DictConfig, tokenizer: PreTrainedTokenizerBase,
                     f'Got exception {str(e)} while loading model {model_cfg.name}. {num_retries-retries} retries remaining'
                 )
 
+def load_model_asif_hf(model_cfg: DictConfig, tokenizer: PreTrainedTokenizerBase,
+               num_retries: int) -> Optional[ComposerModel]:
+    model_registry = {
+        'mpt_causal_lm': MPTForCausalLM,
+        'hf_causal_lm': AutoModelForCausalLM,
+        'hf_prefix_lm': AutoModelForCausalLM,
+        'hf_t5': T5ForConditionalGeneration,
+    }
+    retries = 0
+    while retries < num_retries:
+        try:
+            trust_remote_code = model_cfg.get('trust_remote_code', True)
+            use_auth_token = model_cfg.get('use_auth_token', False)
+            model = model_registry[model_cfg.name].from_pretrained(
+                model_cfg.pretrained_model_name_or_path,
+                trust_remote_code=trust_remote_code,
+                use_auth_token=use_auth_token,
+                device_map="auto",
+                torch_dtype=torch.bfloat16
+            )
+
+            composer_model_wrapper = COMPOSER_MODEL_REGISTRY[model_cfg.name](
+                model, tokenizer)
+            return composer_model_wrapper
+        except Exception as e:
+            retries += 1
+            if retries >= num_retries:
+                raise e
+            else:
+                print(
+                    f'Got exception {str(e)} while loading model {model_cfg.name}. {num_retries-retries} retries remaining'
+                )
+    
 
 def load_model(model_cfg: DictConfig, tokenizer: PreTrainedTokenizerBase,
                fsdp_config: Optional[Dict],
@@ -142,6 +175,9 @@ def evaluate_model(
     if hasattr(model_cfg.model, 'pretrained_lora_id_or_path'):
         composer_model = load_peft_model(model_cfg.model, tokenizer,
                                          num_retries)
+    elif hasattr(model_cfg.model, 'use_pure_hf'):
+        composer_model = load_model_asif_hf(model_cfg.model, tokenizer,
+                                         num_retries)
     else:
         composer_model = load_model(model_cfg.model, tokenizer, fsdp_config,
                                     num_retries)
@@ -176,6 +212,7 @@ def evaluate_model(
         log_to_console=True,
         dist_timeout=dist_timeout,
         python_log_level=python_log_level,
+        move_to_device=model_cfg.get("move_to_device", True)
     )
 
     if torch.cuda.is_available():

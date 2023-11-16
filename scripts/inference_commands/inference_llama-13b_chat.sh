@@ -1,7 +1,7 @@
 
 
 
-python inference/hf_interactive_generate.py -n /leonardo_scratch/large/userexternal/gpuccett/models/llama-2-13b-chat \
+python inference/hf_interactive_generate.py -n /leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b \
   --max_new_tokens=512 \
   --temperature 0.8 \
   --top_k 0 \
