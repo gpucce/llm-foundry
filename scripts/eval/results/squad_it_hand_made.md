@@ -10,3 +10,7 @@
 |            | squad_it_test |           |   0.409384 | 3-shot            | llama2_13b_chat    |
 |            | squad_it_test |           |   0.212511 | 0-shot            | llama2_70b-chat    |
 |            | squad_it_test |           |   0.425286 | 3-shot            | llama2_70b-chat    |
+|            | squad_it_test |           |   0.142594 | 0-shot            | camoscio1_mistral-7b |
+|            | squad_it_test |           |   0.271126 | 3-shot            | camoscio1_mistral-7b |
+|            | squad_it_test |           |   0.202129 | 0-shot            | mistral-Ita-7b |
+|            | squad_it_test |           |   0.315942 | 3-shot            | mistral-Ita-7b |
