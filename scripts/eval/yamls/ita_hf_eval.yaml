@@ -18,18 +18,30 @@ models:
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 #   results_output_path: "results/camoscio1_7b.md"
+# -
+#   model_name: "camoscio1_mistral-7b"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio-mistral7b"
+#     init_device: cpu
+#     pretrained: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio-mistral7b"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   results_output_path: "results/camoscio1_7b.md"
 -
-  model_name: "camoscio1_mistral-7b"
+  model_name: "mistral-Ita-7b"
   model:
     name: hf_causal_lm
-    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio-mistral7b"
+    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral-Ita-7b"
     init_device: cpu
     pretrained: true
   tokenizer:
-    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio-mistral7b"
+    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral-Ita-7b"
     kwargs:
       model_max_length: ${max_seq_len}
-  results_output_path: "results/camoscio1_7b.md"
+  results_output_path: "mistral-Ita-7b"
 # -
 #   model_name: "camoscio2_13b-chat"
 #   model:
