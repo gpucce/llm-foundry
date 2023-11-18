@@ -1,5 +1,5 @@
 python /p/home/jusers/puccetti1/juwels/puccetti1/llm/llm-foundry/scripts/inference/vllm_generate.py \
-    --name_or_path /p/fastdata/mmlaion/puccetti1/llama-2-models-hf/llama-2-13b-chat/ \
+    --name_or_path /leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2_13b \
     --temperature 1.0 \
     --top_p 0.95 \
     --top_k 50 \

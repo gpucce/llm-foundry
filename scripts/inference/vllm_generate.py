@@ -108,6 +108,9 @@ def parse_args() -> Namespace:
     parser.add_argument("--max_prompts", type=int, default=20)
     parser.add_argument("--output_path", type=str, default="generation_output")
     parser.add_argument("--num_nodes", type=int, default=1)
+    parser.add_argument("--system_prompt", type=str, default=None)
+    parser.add_argument("--human_key", type=str, default=None)
+    parser.add_argument("--tensor_parallel_size", type=int, default=1)
     return parser.parse_args()
 
 
@@ -126,16 +129,17 @@ def load_prompt_string_from_file(prompt_path_str: str):
     return prompt_string
 
 def main(args):
-    tensor_parallel_size = 4 * args.num_nodes
+    tensor_parallel_size = args.tensor_parallel_size
     print(f"########################### Tensor Parallel {tensor_parallel_size}")
     prompt_dicts = load_prompt_string_from_file(
         args.prompts
     )
 
     prompt_dicts = prompt_dicts[:args.max_prompts]
-
     prompts = [i["prompt"] for i in prompt_dicts]
-    prompts = [f"[INST]<<SYS>>\n \n<</SYS>>\n\n " + i + "[/INST]" for i in prompts]
+    if args.system_prompt is None:
+        args.system_prompt = "[INST]<<SYS>>\n \n<</SYS>>\n\n {} [/INST]"
+    prompts = [args.system_prompt.format(i) for i in prompts]
 
     llm = LLM(model=args.name_or_path, tensor_parallel_size=tensor_parallel_size)
 
@@ -164,11 +168,13 @@ def main(args):
 
         generations = llm.generate(prompts, params)
         future_df = []
+        if args.human_key is None:
+            args.human_key = "human_text"
         with open(str(future_df_path).replace(".csv", ".json"), "w") as jf:
             for prompt_dict, generated in tqdm(zip(prompt_dicts, generations)):
                 future_df.append({
                     "prompt": prompt_dict["prompt"],
-                    "original_continuation": prompt_dict["human_text"],
+                    "original_continuation": prompt_dict[args.human_key],
                     "continuation": generated.outputs[0].text
                 })
                 prompt_dict["machine_text"] = generated.outputs[0].text
