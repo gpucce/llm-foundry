@@ -30,18 +30,18 @@ models:
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 #   results_output_path: "results/camoscio1_7b.md"
--
-  model_name: "mistral-Ita-7b"
-  model:
-    name: hf_causal_lm
-    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral-Ita-7b"
-    init_device: cpu
-    pretrained: true
-  tokenizer:
-    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral-Ita-7b"
-    kwargs:
-      model_max_length: ${max_seq_len}
-  results_output_path: "mistral-Ita-7b"
+# -
+#   model_name: "mistral-Ita-7b"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral-Ita-7b"
+#     init_device: cpu
+#     pretrained: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_mistral/mistral-Ita-7b"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   results_output_path: "mistral-Ita-7b"
 # -
 #   model_name: "camoscio2_13b-chat"
 #   model:
@@ -66,20 +66,20 @@ models:
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 #   results_output_path: "results/camoscio2_13b.md"
-# -
-#   model_name: "camoscio2_70b"
-#   model:
-#     name: hf_causal_lm
-#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora/merged-350"
-#     init_device: cpu
-#     pretrained: true
-#     use_pure_hf: true
-#   tokenizer:
-#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora/merged-350"
-#     kwargs:
-#       model_max_length: ${max_seq_len}
-#   move_to_device: false
-#   results_output_path: "results/camoscio2_70b.md"
+-
+  model_name: "camoscio2_70b"
+  model:
+    name: hf_causal_lm
+    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf"
+    init_device: cpu
+    pretrained: true
+    use_pure_hf: true
+  tokenizer:
+    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf"
+    kwargs:
+      model_max_length: ${max_seq_len}
+  move_to_device: false
+  results_output_path: "results/camoscio2_70b.md"
 
 # -
 #   model_name: "llama2_70b-chat"
