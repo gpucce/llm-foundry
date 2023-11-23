@@ -212,7 +212,8 @@ def evaluate_model(
         log_to_console=True,
         dist_timeout=dist_timeout,
         python_log_level=python_log_level,
-        move_to_device=model_cfg.get("move_to_device", True)
+        move_to_device=model_cfg.get("move_to_device", True),
+        data_output_path=model_cfg.get("data_output_path", None)
     )
 
     if torch.cuda.is_available():
