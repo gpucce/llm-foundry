@@ -54,6 +54,7 @@ def load_peft_model(model_cfg: DictConfig, tokenizer: PreTrainedTokenizerBase,
                 model_cfg.pretrained_model_name_or_path,
                 trust_remote_code=trust_remote_code,
                 use_auth_token=use_auth_token,
+                low_cpu_mem_usage=True
             )
 
             peft_model = PeftModel.from_pretrained(

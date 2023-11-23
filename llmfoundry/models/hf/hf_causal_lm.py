@@ -172,6 +172,7 @@ class ComposerHFCausalLM(HuggingFaceModelWithZLoss):
                             trust_remote_code=trust_remote_code,
                             use_auth_token=use_auth_token,
                             config=config,
+                            low_cpu_mem_usage=True
                         )
 
             dist.barrier()
@@ -184,7 +185,8 @@ class ComposerHFCausalLM(HuggingFaceModelWithZLoss):
                         trust_remote_code=trust_remote_code,
                         use_auth_token=use_auth_token,
                         load_in_8bit=load_in_8bit,
-                        config=config)
+                        config=config,
+                        low_cpu_mem_usage=True)
                 else:
                     model = AutoModelForCausalLM.from_config(
                         config,
