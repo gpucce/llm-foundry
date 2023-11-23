@@ -1,10 +1,17 @@
 *.out
 slurm_logs
 
+slurm_logs/
+results/
+
+
 # Data (created in readme examples)
 my-copy-c4*/
 my-copy-arxiv*/
 *.jsonl*
+models*/
+outputs*/
+*.sif*
 
 # WandB
 wandb/

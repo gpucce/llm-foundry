@@ -1,10 +1,10 @@
 # Pretrain a gpt2 style model
 # this is NOT a finetuning run
 
-data_local: ./my-copy-c4
+data_local: /p/home/jusers/puccetti1/juwels/puccetti1/llm/llm-foundry/scripts/my-copy-c4-gpt2
 data_remote: # If blank, files must be present in data_local
 tokenizer_name: gpt2
-max_seq_len: 2048
+max_seq_len: 512
 global_seed: 17
 
 # Run Name
@@ -25,6 +25,7 @@ tokenizer:
   name: ${tokenizer_name}
   kwargs:
     model_max_length: ${max_seq_len}
+    max_seq_len: ${max_seq_len}
 
 # Dataloaders
 train_loader:
@@ -32,9 +33,9 @@ train_loader:
   dataset:
     local: ${data_local}
     remote: ${data_remote}
-    split: train
+    split: train_small
     shuffle: true
-    tokenizer_name: ${tokenizer_name}
+    # tokenizer_name: ${tokenizer_name}
     max_seq_len: ${max_seq_len}
     shuffle_seed: ${global_seed}
   drop_last: true
@@ -45,9 +46,9 @@ eval_loader:
   dataset:
     local: ${data_local}
     remote: ${data_remote}
-    split: val
+    split: val_small
     shuffle: false
-    tokenizer_name: ${tokenizer_name}
+    # tokenizer_name: ${tokenizer_name}
     max_seq_len: ${max_seq_len}
     shuffle_seed: ${global_seed}
   drop_last: false
@@ -73,8 +74,8 @@ algorithms:
     clipping_type: norm
     clipping_threshold: 1.0
 
-max_duration: 33696ba # ~ 17.55B tokens; 150 tokens / param
-eval_interval: 1000ba
+max_duration: 100ba # ~ 17.55B tokens; 150 tokens / param
+eval_interval: 10ba
 eval_first: false
 eval_subset_num_batches: -1
 global_train_batch_size: 256
