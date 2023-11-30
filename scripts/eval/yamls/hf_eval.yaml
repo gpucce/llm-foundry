@@ -12,12 +12,14 @@ models:
   model:
     name: hf_causal_lm
     pretrained_model_name_or_path: ${model_name_or_path}
-    init_device: mixed
+    init_device: cpu
     pretrained: true
   tokenizer:
     name: ${model_name_or_path}
     kwargs:
       model_max_length: ${max_seq_len}
+  results_output_path: "results/gpt-neo-125m.md"
+  data_output_path: "outputs/gpt-neo-125m.jsonl"
 
 # # if you are evaluating more than one model, list them all as YAML blocks without variable interpolation
 # -

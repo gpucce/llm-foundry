@@ -34,6 +34,8 @@ from llmfoundry.utils.config_utils import (log_config, pop_config,
                                            process_init_device,
                                            update_batch_size_info)
 
+from datasets import disable_caching
+disable_caching()
 
 # enforce HF cache
 os.environ["HF_DATASETS_CACHE"] = "/leonardo_scratch/large/userexternal/gpuccett/hf_cache"

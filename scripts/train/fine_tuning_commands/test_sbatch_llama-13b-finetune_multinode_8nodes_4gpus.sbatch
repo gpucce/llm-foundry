@@ -13,9 +13,11 @@
 module purge
 module load gcc
 module load cuda
-module load profile/deeplrn
-module load cineca-ai
+# module load profile/deeplrn
+# module load cineca-ai
 
-source /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/bin/activate
+export PYTHONPATH=""
 
-srun /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/scripts/train/fine_tuning_commands/test_salloc_llama-13b-finetune_multinode_8nodes_4gpus.sbatch
+source /leonardo_work/IscrC_GELATINO/gpuccett/Repos/foundry_venv/bin/activate
+
+srun /leonardo_work/IscrC_GELATINO/gpuccett/Repos/llm-foundry_gpucce/scripts/train/fine_tuning_commands/test_salloc_llama-13b-finetune_multinode_8nodes_4gpus.sbatch

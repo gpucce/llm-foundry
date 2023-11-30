@@ -2,12 +2,12 @@ max_seq_len: 2048
 global_seed: 17
 
 # Run Name
-run_name: llama-13b_camoscio_2nodes # If left blank, will be read from env var $RUN_NAME
+run_name: llama-7b_camoscio_32nodes # If left blank, will be read from env var $RUN_NAME
 
 model:
   name: hf_causal_lm
   pretrained: true
-  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-hf
+  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-7b-hf
   init_device: mixed
   use_flash_attention_2: True
   # config_overrides:
@@ -19,7 +19,7 @@ model:
 
 # Tokenizer
 tokenizer:
-  name: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-hf
+  name: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-7b-hf
   kwargs:
     model_max_length: ${max_seq_len}
 
@@ -92,12 +92,12 @@ max_duration: 100ba  # 2-3 epochs seems like the sweet spot
 eval_interval: 1
 # eval_subset_num_batches: -1
 # eval_first: true
-global_train_batch_size: 32  # somewhere in the 6-8 * numgpus range seems good
+global_train_batch_size: 8192  # somewhere in the 6-8 * numgpus range seems good
 
 # System
 seed: ${global_seed}
 device_eval_batch_size: 4
-device_train_microbatch_size: 4
+device_train_microbatch_size: 8
 # device_train_microbatch_size: auto
 precision: amp_bf16
 
@@ -128,7 +128,7 @@ callbacks:
 loggers:
   wandb:
     project: llm_ita
-    name: camoscio_13b_2nodes
+    name: camoscio_7b_32nodes
     entity: gpucce
 
 # Checkpoint to local filesystem or remote object store

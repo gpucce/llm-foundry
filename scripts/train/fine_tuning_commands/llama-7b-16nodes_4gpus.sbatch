@@ -1,25 +1,17 @@
 #!/usr/bin/bash
 
-module purge
-module load gcc
-module load cuda
-module load profile/deeplrn
-module load cineca-ai
-
-source /leonardo_scratch/large/userexternal/gpuccett/llm-foundry/venv/bin/activate
-
 printf -v exp_date '%(%Y-%m-%d_%H-%M-%S)T' -1
-export RUN_NAME="llama-13b_camoscio_${exp_date}"
-echo "${SLURM_NODEID}: LOCAL_WORLD_SIZE=${LOCAL_WORLD_SIZE}"
+export RUN_NAME="llama-7b_camoscio_16nodes_4gpus_${exp_date}"
+# export RUN_NAME=llama-7b_camoscio_2023-09-22_19
 
 export TF_ENABLE_ONEDNN_OPTS=0
 export WANDB_MODE=offline
 
-export LOCAL_WORLD_SIZE=2
+export LOCAL_WORLD_SIZE=4
 echo "${SLURM_NODEID}: LOCAL_WORLD_SIZE=${LOCAL_WORLD_SIZE}"
 export NPROC=$LOCAL_WORLD_SIZE
 echo "${SLURM_NODEID}: NPROC=${NPROC}"
-export WORLD_SIZE=8
+export WORLD_SIZE=64
 echo "${SLURM_NODEID}: WORLD SIZE=${WORLD_SIZE}"
 
 master_addr="$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)"
@@ -42,12 +34,4 @@ echo "${SLURM_NODEID}: LOCAL_RANK=${LOCAL_RANK}"
 
 
 
-if [ $SLURM_NODEID != 0 ] 
-then
-    sleep 1
-fi
-
-composer train.py yamls/finetune/llama-13b_camoscio.yaml
-
-# echo $(echo $SLURM_NODEID)
-# echo $SLURM_NODEID
+composer train.py yamls/finetune/llama-7b_camoscio_16nodes.yaml

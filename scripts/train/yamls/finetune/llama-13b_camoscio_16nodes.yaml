@@ -2,7 +2,7 @@ max_seq_len: 2048
 global_seed: 17
 
 # Run Name
-run_name: llama-13b_camoscio_2nodes # If left blank, will be read from env var $RUN_NAME
+run_name: llama-13b_camoscio # If left blank, will be read from env var $RUN_NAME
 
 model:
   name: hf_causal_lm
@@ -92,7 +92,7 @@ max_duration: 100ba  # 2-3 epochs seems like the sweet spot
 eval_interval: 1
 # eval_subset_num_batches: -1
 # eval_first: true
-global_train_batch_size: 32  # somewhere in the 6-8 * numgpus range seems good
+global_train_batch_size: 256  # somewhere in the 6-8 * numgpus range seems good
 
 # System
 seed: ${global_seed}
@@ -128,7 +128,7 @@ callbacks:
 loggers:
   wandb:
     project: llm_ita
-    name: camoscio_13b_2nodes
+    name: camoscio_13b_16nodes
     entity: gpucce
 
 # Checkpoint to local filesystem or remote object store

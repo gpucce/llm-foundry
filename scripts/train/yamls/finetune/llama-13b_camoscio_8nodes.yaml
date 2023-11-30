@@ -7,8 +7,9 @@ run_name: llama-13b_camoscio # If left blank, will be read from env var $RUN_NAM
 model:
   name: hf_causal_lm
   pretrained: true
-  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/llama-2-13b
+  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-hf
   init_device: mixed
+  use_flash_attention_2: True
   # config_overrides:
     # max_position_embeddings: ${max_seq_len}
     # attn_config:
@@ -18,7 +19,7 @@ model:
 
 # Tokenizer
 tokenizer:
-  name: /leonardo_scratch/large/userexternal/gpuccett/models/llama-2-13b
+  name: /leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-hf
   kwargs:
     model_max_length: ${max_seq_len}
 
@@ -87,7 +88,7 @@ algorithms:
     clipping_type: norm
     clipping_threshold: 1.0
 
-max_duration: 3ep  # 2-3 epochs seems like the sweet spot
+max_duration: 100ba  # 2-3 epochs seems like the sweet spot
 eval_interval: 1
 # eval_subset_num_batches: -1
 # eval_first: true
@@ -120,9 +121,6 @@ console_log_interval: 20ba
 callbacks:
   speed_monitor:
     window_size: 10
-  mono_ckpt_saver:
-    save_folder: /leonardo_scratch/large/userexternal/gpuccett/models/{run_name}/checkpoints
-    batch_interval: 392
   lr_monitor: {}
   memory_monitor: {}
   runtime_estimator: {}
