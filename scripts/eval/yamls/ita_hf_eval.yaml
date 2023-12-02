@@ -59,29 +59,46 @@ models:
 #   model_name: "camoscio2_13b"
 #   model:
 #     name: hf_causal_lm
-#     pretrained_model_name_or_path: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2_13b_v2"
 #     init_device: cpu
 #     pretrained: true
+#     use_pure_hf: true
 #   tokenizer:
-#     name: "/leonardo_work/IscrC_GELATINO/gpuccett/models/camoscio2_13b"
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2_13b_v2"
 #     kwargs:
 #       model_max_length: ${max_seq_len}
 #   results_output_path: "results/camoscio2_13b.md"
--
-  model_name: "camoscio2_70b"
-  model:
-    name: hf_causal_lm
-    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf"
-    init_device: cpu
-    pretrained: true
-    use_pure_hf: true
-  tokenizer:
-    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf"
-    kwargs:
-      model_max_length: ${max_seq_len}
-  move_to_device: false
-  results_output_path: "results/camoscio2_70b.md"
-  data_output_path: "outputs/camoscio2_70b.jsonl"
+#   data_output_path: "outputs/camoscio2_13b.jsonl"
+# -
+#   model_name: "camoscio2_70b_decaylr"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf-decaylr"
+#     init_device: cpu
+#     pretrained: true
+#     use_pure_hf: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf-decaylr"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   move_to_device: false
+#   results_output_path: "results/camoscio2_70b_decaylr.md"
+#   data_output_path: "outputs/camoscio2_70b_decaylr.jsonl"
+# -
+#   model_name: "camoscio2_70b_v2"
+#   model:
+#     name: hf_causal_lm
+#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf_v2"
+#     init_device: cpu
+#     pretrained: true
+#     use_pure_hf: true
+#   tokenizer:
+#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_camoscio/camoscio2-70b-lora-hf_v2"
+#     kwargs:
+#       model_max_length: ${max_seq_len}
+#   move_to_device: false
+#   results_output_path: "results/camoscio2_70b_v2.md"
+#   data_output_path: "outputs/camoscio2_70b_v2.jsonl"
 # -
 #   model_name: "llama2_70b-chat"
 #   model:
@@ -96,20 +113,22 @@ models:
 #       model_max_length: ${max_seq_len}
 #   move_to_device: false
 #   results_output_path: "results/camoscio2_70b.md"
-# -
-#   model_name: "llama2_13b_chat"
-#   model:
-#     name: hf_causal_lm
-#     pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
-#     init_device: cpu
-#     pretrained: true
-#   tokenizer:
-#     name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
-#     kwargs:
-#       model_max_length: ${max_seq_len}
-#   results_output_path: "results/llama2_13b_chat.md"
+-
+  model_name: "llama2_13b_chat"
+  model:
+    name: hf_causal_lm
+    pretrained_model_name_or_path: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
+    init_device: cpu
+    pretrained: true
+    use_pure_hf: true
+  tokenizer:
+    name: "/leonardo_scratch/large/userexternal/gpuccett/models/hf_llama/llama-2-13b-chat/"
+    kwargs:
+      model_max_length: ${max_seq_len}
+  results_output_path: "results/llama2_13b_chat.md"
+  data_output_path: "outputs/llama2_13b.md"
 
-device_eval_batch_size: 12
+device_eval_batch_size: 4
 precision: amp_bf16
 
 # FSDP config for model sharding
